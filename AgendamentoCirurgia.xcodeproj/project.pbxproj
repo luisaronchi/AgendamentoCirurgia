@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1631556E1B54411F00A4DCE9 /* RequestDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631556D1B54411F00A4DCE9 /* RequestDAO.swift */; };
+		163155701B54414F00A4DCE9 /* DoctorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1631556F1B54414F00A4DCE9 /* DoctorDAO.swift */; };
+		163155721B54416900A4DCE9 /* RequestStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163155711B54416900A4DCE9 /* RequestStatusType.swift */; };
+		163155741B54417700A4DCE9 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163155731B54417700A4DCE9 /* Request.swift */; };
+		163155761B54418300A4DCE9 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163155751B54418300A4DCE9 /* Doctor.swift */; };
 		ABA1AE371B5417AA00467491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE361B5417AA00467491 /* AppDelegate.swift */; };
 		ABA1AE391B5417AA00467491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE381B5417AA00467491 /* ViewController.swift */; };
 		ABA1AE3C1B5417AA00467491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AE3A1B5417AA00467491 /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1631556D1B54411F00A4DCE9 /* RequestDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestDAO.swift; sourceTree = "<group>"; };
+		1631556F1B54414F00A4DCE9 /* DoctorDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorDAO.swift; sourceTree = "<group>"; };
+		163155711B54416900A4DCE9 /* RequestStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestStatusType.swift; sourceTree = "<group>"; };
+		163155731B54417700A4DCE9 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		163155751B54418300A4DCE9 /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		ABA1AE311B5417AA00467491 /* AgendamentoCirurgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendamentoCirurgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA1AE351B5417AA00467491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA1AE361B5417AA00467491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +68,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1631556A1B5440BA00A4DCE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1631556D1B54411F00A4DCE9 /* RequestDAO.swift */,
+				1631556F1B54414F00A4DCE9 /* DoctorDAO.swift */,
+				163155711B54416900A4DCE9 /* RequestStatusType.swift */,
+				163155731B54417700A4DCE9 /* Request.swift */,
+				163155751B54418300A4DCE9 /* Doctor.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1631556B1B5440C000A4DCE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ABA1AE361B5417AA00467491 /* AppDelegate.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1631556C1B5440C600A4DCE9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABA1AE381B5417AA00467491 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		ABA1AE281B5417AA00467491 = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +117,9 @@
 		ABA1AE331B5417AA00467491 /* AgendamentoCirurgia */ = {
 			isa = PBXGroup;
 			children = (
-				ABA1AE361B5417AA00467491 /* AppDelegate.swift */,
-				ABA1AE381B5417AA00467491 /* ViewController.swift */,
+				1631556C1B5440C600A4DCE9 /* Controller */,
+				1631556B1B5440C000A4DCE9 /* View */,
+				1631556A1B5440BA00A4DCE9 /* Model */,
 				ABA1AE3A1B5417AA00467491 /* Main.storyboard */,
 				ABA1AE3D1B5417AA00467491 /* Images.xcassets */,
 				ABA1AE3F1B5417AA00467491 /* LaunchScreen.xib */,
@@ -215,7 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1631556E1B54411F00A4DCE9 /* RequestDAO.swift in Sources */,
 				ABA1AE391B5417AA00467491 /* ViewController.swift in Sources */,
+				163155761B54418300A4DCE9 /* Doctor.swift in Sources */,
+				163155701B54414F00A4DCE9 /* DoctorDAO.swift in Sources */,
+				163155721B54416900A4DCE9 /* RequestStatusType.swift in Sources */,
+				163155741B54417700A4DCE9 /* Request.swift in Sources */,
 				ABA1AE571B5419FB00467491 /* 123ViewController.swift in Sources */,
 				ABA1AE371B5417AA00467491 /* AppDelegate.swift in Sources */,
 			);
