@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>250F3F7A-EDA3-4020-97DB-9325C4C08234</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AgendamentoCirurgia</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E7C9EC1159FC967AFBA2C573BEFEE0D887ACAFE9</key>
+		<string>https://github.com/luisaronchi/AgendamentoCirurgia.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AgendamentoCirurgia.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E7C9EC1159FC967AFBA2C573BEFEE0D887ACAFE9</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/luisaronchi/AgendamentoCirurgia.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E7C9EC1159FC967AFBA2C573BEFEE0D887ACAFE9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E7C9EC1159FC967AFBA2C573BEFEE0D887ACAFE9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AgendamentoCirurgia</string>
+		</dict>
+	</array>
+</dict>
+</plist>
