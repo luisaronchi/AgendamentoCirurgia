@@ -10,9 +10,11 @@ import UIKit
 import Parse
 import Bolts
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         let Doctor = PFObject(className: "Doctor")
@@ -31,7 +33,8 @@ class ViewController: UIViewController {
         
     }
 
-     override func didReceiveMemoryWarning() {
+     override func didReceiveMemoryWarning()
+     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
