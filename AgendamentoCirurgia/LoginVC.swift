@@ -20,6 +20,7 @@ class LoginVC: UIViewController
     @IBOutlet weak var choiceSegment: UISegmentedControl!
     
     @IBAction func loginButton(sender: UIButton) {
+        //println("loginButton")
     }
     
     @IBAction func singInButton(sender: UIButton) {
