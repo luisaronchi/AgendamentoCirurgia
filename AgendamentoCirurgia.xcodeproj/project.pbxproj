@@ -23,7 +23,6 @@
 		A5D579401B5695E4006098EA /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5793E1B5695E4006098EA /* RequestVC.swift */; };
 		A5D579411B5695E4006098EA /* RequestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D5793F1B5695E4006098EA /* RequestVC.xib */; };
 		ABA1AE371B5417AA00467491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE361B5417AA00467491 /* AppDelegate.swift */; };
-		ABA1AE391B5417AA00467491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE381B5417AA00467491 /* ViewController.swift */; };
 		ABA1AE3C1B5417AA00467491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AE3A1B5417AA00467491 /* Main.storyboard */; };
 		ABA1AE3E1B5417AA00467491 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AE3D1B5417AA00467491 /* Images.xcassets */; };
 		ABA1AE411B5417AA00467491 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AE3F1B5417AA00467491 /* LaunchScreen.xib */; };
@@ -73,7 +72,6 @@
 		ABA1AE311B5417AA00467491 /* AgendamentoCirurgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendamentoCirurgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA1AE351B5417AA00467491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA1AE361B5417AA00467491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABA1AE381B5417AA00467491 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ABA1AE3B1B5417AA00467491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABA1AE3D1B5417AA00467491 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ABA1AE401B5417AA00467491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -142,13 +140,13 @@
 			isa = PBXGroup;
 			children = (
 				ABA1AE3A1B5417AA00467491 /* Main.storyboard */,
-				ABA1AE3D1B5417AA00467491 /* Images.xcassets */,
-				ABA1AE3F1B5417AA00467491 /* LaunchScreen.xib */,
-				A5D579371B56943D006098EA /* RegisterVC.xib */,
 				A5D5793B1B569462006098EA /* CreateRequestVC.xib */,
+				A5D579371B56943D006098EA /* RegisterVC.xib */,
 				A5D5793F1B5695E4006098EA /* RequestVC.xib */,
 				3FD1A2AA1B569843005BC804 /* FeedVC.xib */,
 				A50267391B56C43C00DA2B53 /* LoginVC.xib */,
+				ABA1AE3D1B5417AA00467491 /* Images.xcassets */,
+				ABA1AE3F1B5417AA00467491 /* LaunchScreen.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -158,7 +156,6 @@
 			children = (
 				A5D5793A1B569462006098EA /* CreateRequestVC.swift */,
 				A5D579361B56943D006098EA /* RegisterVC.swift */,
-				ABA1AE381B5417AA00467491 /* ViewController.swift */,
 				A5D5793E1B5695E4006098EA /* RequestVC.swift */,
 				3FD1A2A91B569843005BC804 /* FeedVC.swift */,
 				A50267381B56C43C00DA2B53 /* LoginVC.swift */,
@@ -343,7 +340,6 @@
 				3FD1A2AB1B569843005BC804 /* FeedVC.swift in Sources */,
 				1631556E1B54411F00A4DCE9 /* RequestDAO.swift in Sources */,
 				A502673A1B56C43C00DA2B53 /* LoginVC.swift in Sources */,
-				ABA1AE391B5417AA00467491 /* ViewController.swift in Sources */,
 				163155761B54418300A4DCE9 /* Doctor.swift in Sources */,
 				A5D579401B5695E4006098EA /* RequestVC.swift in Sources */,
 				163155701B54414F00A4DCE9 /* DoctorDAO.swift in Sources */,
