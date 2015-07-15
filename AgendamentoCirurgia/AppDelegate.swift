@@ -22,12 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // https://parse.com/docs/ios_guide#localdatastore/iOS
         Parse.enableLocalDatastore()
         
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        var mainViewController = LoginVC(nibName: "LoginVC", bundle: nil)
-        
-        window?.rootViewController = mainViewController
-        window?.makeKeyAndVisible()
-        
         // Initialize Parse.
         Parse.setApplicationId("G0eQ1jBAii4dkzxxtNU787eoBctpy4urYrPlG95b",
             clientKey: "oomRMLm1mx0QSra40nxBEKtSnrdFRhZpfpfPqbGr")
