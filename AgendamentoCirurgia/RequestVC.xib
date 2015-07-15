@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -23,6 +23,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
+                <outlet property="birthField" destination="WK1-dV-QG8" id="Qhg-kw-ND3"/>
+                <outlet property="insuranceField" destination="JzB-Zm-56n" id="Zli-Fy-nYy"/>
+                <outlet property="materialField" destination="c6p-IP-ozS" id="GL2-99-dN1"/>
+                <outlet property="nameDoctorField" destination="MYO-72-9js" id="HI5-EW-nl0"/>
+                <outlet property="nameField" destination="rJj-93-FX9" id="WTd-8d-W61"/>
+                <outlet property="observationField" destination="SOy-9K-cAY" id="zeW-gC-Fn8"/>
+                <outlet property="phoneField" destination="AIR-4x-xoY" id="8P8-mz-B1k"/>
+                <outlet property="surgeryDateField" destination="gXS-6x-6KV" id="Taq-NV-GjL"/>
+                <outlet property="surgeryTypeField" destination="iaA-4g-p5H" id="yt0-N6-Rgz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -124,7 +133,7 @@
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIR-4x-xoY">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIR-4x-xoY">
                                             <rect key="frame" x="0.0" y="303" width="600" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>

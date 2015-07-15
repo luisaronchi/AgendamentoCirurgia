@@ -13,15 +13,18 @@ import Bolts
 class LoginVC: UIViewController
 {
 
-    @IBOutlet weak var emailLogin: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     
+    @IBOutlet weak var passwordField: UITextField!
+
+    @IBOutlet weak var choiceSegment: UISegmentedControl!
     
-    @IBOutlet weak var passwordLogin: UITextField!
-    
-    
-    @IBAction func loginButton(sender: AnyObject) {
+    @IBAction func loginButton(sender: UIButton) {
+        //println("loginButton")
     }
     
+    @IBAction func singInButton(sender: UIButton) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +68,6 @@ class LoginVC: UIViewController
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

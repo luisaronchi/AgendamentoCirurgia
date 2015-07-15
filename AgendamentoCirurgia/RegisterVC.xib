@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -17,12 +17,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
-                <outlet property="crmField" destination="fxY-M4-ENv" id="cME-Lt-5bO"/>
-                <outlet property="emailField" destination="iFa-Pf-cHc" id="1k8-Mq-UPN"/>
-                <outlet property="nameField" destination="SYJ-jl-Anp" id="BAk-4G-kqN"/>
-                <outlet property="passwordField" destination="HRw-9h-O0O" id="989-kw-8SZ"/>
-                <outlet property="phoneField" destination="AGr-wz-ggd" id="Aae-If-Ici"/>
-                <outlet property="singinButton" destination="TkZ-lH-FjT" id="sCf-vK-D3E"/>
+                <outlet property="crmField" destination="fxY-M4-ENv" id="pW1-8N-tPG"/>
+                <outlet property="emailField" destination="iFa-Pf-cHc" id="4uC-aL-u6O"/>
+                <outlet property="nameField" destination="SYJ-jl-Anp" id="5On-fe-q7d"/>
+                <outlet property="passwordField" destination="HRw-9h-O0O" id="ro7-Cr-gXs"/>
+                <outlet property="phoneField" destination="AGr-wz-ggd" id="NRx-mK-m1Q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -85,6 +84,9 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="qcF-dR-Vhf"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

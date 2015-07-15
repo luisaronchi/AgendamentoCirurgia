@@ -1,14 +1,14 @@
 //
-//  CreateRequestVC.swift
+//  RequestSumaryVC.swift
 //  AgendamentoCirurgia
 //
-//  Created by Jenifer Emmanuel on 15/07/15.
+//  Created by Alena Miklos on 15/07/15.
 //  Copyright (c) 2015 BEPiD. All rights reserved.
 //
 
 import UIKit
 
-class CreateRequestVC: UIViewController {
+class RequestSumaryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
