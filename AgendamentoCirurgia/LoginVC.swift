@@ -19,14 +19,35 @@ class LoginVC: UIViewController
 
     @IBOutlet weak var choiceSegment: UISegmentedControl!
     
-    @IBAction func loginButton(sender: UIButton) {
+    @IBAction func loginButton(sender: UIButton)
+    {
         //println("loginButton")
     }
     
-    @IBAction func singInButton(sender: UIButton) {
+    @IBAction func singInButton(sender: UIButton)
+    {
+        
     }
     
-    override func viewDidLoad() {
+    func isDataAvailable (doctor: Doctor, callback: (Bool) -> Void)
+    {
+        var query = PFQuery(className: "Doctor")
+        query.whereKey("CRM", equalTo: doctor.crm)
+        query.whereKey("CPF", equalTo: doctor.cpf)
+        
+        query.findObjectsInBackgroundWithBlock { (vector: [AnyObject]?, error: NSError?) -> Void in
+            
+            if (vector?.count > 0)
+            {
+                callback(false)
+            }
+            
+            callback(true)
+        }
+    }
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         let doctor = PFObject(className: "Doctor")
@@ -38,6 +59,14 @@ class LoginVC: UIViewController
         doctor["Email"] = "gustavosevero@gmail.com"
         doctor["OfficeTelephone"] = 22344565
         doctor["EmergencyTelephone"] = 22345469
+        
+        isDataAvailable(doctor: doctor) { dataOK in
+            
+            if (dataOK)
+            {
+                
+            }
+        }
 
         doctor.saveInBackgroundWithBlock {(sucess:Bool, error: NSError?) -> Void in
             print("foi")
@@ -66,7 +95,8 @@ class LoginVC: UIViewController
         }
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
     }
 

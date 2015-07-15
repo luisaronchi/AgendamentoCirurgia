@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>doctorName</key>
+	<string></string>
+	<key>insurance</key>
+	<string></string>
+	<key>patientFullName</key>
+	<string></string>
+	<key>gender</key>
+	<false/>
+	<key>surgeryDate</key>
+	<date>2015-07-15T19:58:26Z</date>
+	<key>patientBirth</key>
+	<date>2015-07-15T19:58:24Z</date>
+	<key>doctorApplication</key>
+	<string></string>
+	<key>surgeryType</key>
+	<string></string>
+	<key>doctorTelephone</key>
+	<integer>0</integer>
+</dict>
+</plist>
