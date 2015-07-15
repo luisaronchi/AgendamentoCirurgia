@@ -12,6 +12,14 @@
 		163155721B54416900A4DCE9 /* RequestStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163155711B54416900A4DCE9 /* RequestStatusType.swift */; };
 		163155741B54417700A4DCE9 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163155731B54417700A4DCE9 /* Request.swift */; };
 		163155761B54418300A4DCE9 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163155751B54418300A4DCE9 /* Doctor.swift */; };
+		A5D579341B569404006098EA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D579321B569404006098EA /* LoginVC.swift */; };
+		A5D579351B569404006098EA /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D579331B569404006098EA /* LoginVC.xib */; };
+		A5D579381B56943D006098EA /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D579361B56943D006098EA /* RegisterVC.swift */; };
+		A5D579391B56943D006098EA /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D579371B56943D006098EA /* RegisterVC.xib */; };
+		A5D5793C1B569462006098EA /* CreateRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5793A1B569462006098EA /* CreateRequestVC.swift */; };
+		A5D5793D1B569462006098EA /* CreateRequestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D5793B1B569462006098EA /* CreateRequestVC.xib */; };
+		A5D579401B5695E4006098EA /* RequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D5793E1B5695E4006098EA /* RequestVC.swift */; };
+		A5D579411B5695E4006098EA /* RequestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D5793F1B5695E4006098EA /* RequestVC.xib */; };
 		ABA1AE371B5417AA00467491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE361B5417AA00467491 /* AppDelegate.swift */; };
 		ABA1AE391B5417AA00467491 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA1AE381B5417AA00467491 /* ViewController.swift */; };
 		ABA1AE3C1B5417AA00467491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABA1AE3A1B5417AA00467491 /* Main.storyboard */; };
@@ -49,6 +57,14 @@
 		163155711B54416900A4DCE9 /* RequestStatusType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestStatusType.swift; sourceTree = "<group>"; };
 		163155731B54417700A4DCE9 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		163155751B54418300A4DCE9 /* Doctor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		A5D579321B569404006098EA /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A5D579331B569404006098EA /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		A5D579361B56943D006098EA /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		A5D579371B56943D006098EA /* RegisterVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		A5D5793A1B569462006098EA /* CreateRequestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRequestVC.swift; sourceTree = "<group>"; };
+		A5D5793B1B569462006098EA /* CreateRequestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateRequestVC.xib; sourceTree = "<group>"; };
+		A5D5793E1B5695E4006098EA /* RequestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestVC.swift; sourceTree = "<group>"; };
+		A5D5793F1B5695E4006098EA /* RequestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestVC.xib; sourceTree = "<group>"; };
 		ABA1AE311B5417AA00467491 /* AgendamentoCirurgia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgendamentoCirurgia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA1AE351B5417AA00467491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABA1AE361B5417AA00467491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +139,10 @@
 				ABA1AE3A1B5417AA00467491 /* Main.storyboard */,
 				ABA1AE3D1B5417AA00467491 /* Images.xcassets */,
 				ABA1AE3F1B5417AA00467491 /* LaunchScreen.xib */,
+				A5D579331B569404006098EA /* LoginVC.xib */,
+				A5D579371B56943D006098EA /* RegisterVC.xib */,
+				A5D5793B1B569462006098EA /* CreateRequestVC.xib */,
+				A5D5793F1B5695E4006098EA /* RequestVC.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -130,7 +150,11 @@
 		1631556C1B5440C600A4DCE9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A5D579321B569404006098EA /* LoginVC.swift */,
+				A5D5793A1B569462006098EA /* CreateRequestVC.swift */,
+				A5D579361B56943D006098EA /* RegisterVC.swift */,
 				ABA1AE381B5417AA00467491 /* ViewController.swift */,
+				A5D5793E1B5695E4006098EA /* RequestVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -283,9 +307,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D5793D1B569462006098EA /* CreateRequestVC.xib in Resources */,
 				ABA1AE3C1B5417AA00467491 /* Main.storyboard in Resources */,
 				ABA1AE411B5417AA00467491 /* LaunchScreen.xib in Resources */,
+				A5D579351B569404006098EA /* LoginVC.xib in Resources */,
 				ABA1AE3E1B5417AA00467491 /* Images.xcassets in Resources */,
+				A5D579411B5695E4006098EA /* RequestVC.xib in Resources */,
+				A5D579391B56943D006098EA /* RegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,10 +333,14 @@
 			files = (
 				1631556E1B54411F00A4DCE9 /* RequestDAO.swift in Sources */,
 				ABA1AE391B5417AA00467491 /* ViewController.swift in Sources */,
+				A5D579341B569404006098EA /* LoginVC.swift in Sources */,
 				163155761B54418300A4DCE9 /* Doctor.swift in Sources */,
+				A5D579401B5695E4006098EA /* RequestVC.swift in Sources */,
 				163155701B54414F00A4DCE9 /* DoctorDAO.swift in Sources */,
 				163155721B54416900A4DCE9 /* RequestStatusType.swift in Sources */,
+				A5D579381B56943D006098EA /* RegisterVC.swift in Sources */,
 				163155741B54417700A4DCE9 /* Request.swift in Sources */,
+				A5D5793C1B569462006098EA /* CreateRequestVC.swift in Sources */,
 				ABA1AE371B5417AA00467491 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
