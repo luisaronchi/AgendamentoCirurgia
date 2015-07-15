@@ -15,19 +15,50 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let Doctor = PFObject(className: "Doctor")
+        let doctor = PFObject(className: "Doctor")
         
-        Doctor["FullName"] = "Gustavo Severo"
-        Doctor["CRM"] = 123456
-        Doctor["CPF"] = 1234
-        Doctor["Speciality"] = "Neurologista"
-        Doctor["Email"] = "gustavosevero@gmail.com"
-        Doctor["OfficeTelephone"] = 22344565
-        Doctor["EmergencyTelephone"] = 22345469
+        doctor["FullName"] = "Gustavo Severo"
+        doctor["CRM"] = 123456
+        doctor["CPF"] = 1234
+        doctor["Speciality"] = "Neurologista"
+        doctor["Email"] = "gustavosevero@gmail.com"
+        doctor["OfficeTelephone"] = 22344565
+        doctor["EmergencyTelephone"] = 22345469
         
-        Doctor.saveInBackgroundWithBlock {(sucess:Bool, error: NSError?) -> Void in
+        doctor.saveInBackgroundWithBlock {(sucess:Bool, error: NSError?) -> Void in
             print("foi")
+            
         }
+        let request = PFObject(className: "Request")
+     
+      
+        let str = "Working at Parse is great!"
+     
+        let data = str.dataUsingEncoding(NSUTF8StringEncoding)
+        let file = PFFile(name: "texto.txt", data:data!)
+        
+        let date = NSDate()
+        
+        request["PatientFullName"] = "Carol Gradel"
+        request["Insurance"] = "Sulamerica"
+        request["DoctorName"] = "Gustavo Severo"
+        request["DoctorTelephone"] = doctor
+        request["SurgeryType"] = "Retirada de Tumor"
+        request["RequiredMaterial"] = "4 coisos"
+        request["AdditionalInformation"] = "fdgdd"
+        request["DoctorApplication"] = file
+        request["PatientBirth"] = date
+        request["SurgeryDate"] = date
+        request["Gender"] = true
+        
+      
+        
+        request.saveInBackgroundWithBlock {(sucess:Bool, error:NSError?) -> Void in
+            print("salvourequest")
+        
+       
+        }
+        
         
     }
 
