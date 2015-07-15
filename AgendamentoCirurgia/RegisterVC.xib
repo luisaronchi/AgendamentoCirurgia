@@ -17,6 +17,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
+                <outlet property="crmField" destination="fxY-M4-ENv" id="cME-Lt-5bO"/>
+                <outlet property="emailField" destination="iFa-Pf-cHc" id="1k8-Mq-UPN"/>
+                <outlet property="nameField" destination="SYJ-jl-Anp" id="BAk-4G-kqN"/>
+                <outlet property="passwordField" destination="HRw-9h-O0O" id="989-kw-8SZ"/>
+                <outlet property="phoneField" destination="AGr-wz-ggd" id="Aae-If-Ici"/>
+                <outlet property="singinButton" destination="TkZ-lH-FjT" id="sCf-vK-D3E"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

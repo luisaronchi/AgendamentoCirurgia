@@ -13,6 +13,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
+                <outlet property="email" destination="Hpu-fi-wFu" id="jRS-q8-vcU"/>
+                <outlet property="emailField" destination="Hpu-fi-wFu" id="icA-qn-4dX"/>
+                <outlet property="emailLogin" destination="Hpu-fi-wFu" id="HMc-d8-4gT"/>
+                <outlet property="passwordField" destination="l57-fc-QDp" id="Wij-1d-CZC"/>
+                <outlet property="passwordLogin" destination="l57-fc-QDp" id="Oda-0E-gwE"/>
+                <outlet property="senha" destination="l57-fc-QDp" id="ayI-yO-ig6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -41,6 +47,9 @@
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="iQd-Ba-jHe"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
