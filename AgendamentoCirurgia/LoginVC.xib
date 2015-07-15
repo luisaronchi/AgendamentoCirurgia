@@ -8,6 +8,7 @@
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -39,8 +40,17 @@
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MG0-Za-6hG">
+                    <rect key="frame" x="-16" y="372" width="632" height="29"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <segments>
+                        <segment title="Médico"/>
+                        <segment title="Hospital"/>
+                    </segments>
+                    <color key="tintColor" red="0.61568627450000002" green="0.78823529410000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </segmentedControl>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIT-fk-teh">
-                    <rect key="frame" x="0.0" y="371" width="600" height="36"/>
+                    <rect key="frame" x="0.0" y="401" width="600" height="36"/>
                     <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
                     <state key="normal" title="Entrar">
@@ -50,6 +60,15 @@
                     <connections>
                         <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="iQd-Ba-jHe"/>
                     </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUU-9k-GFr">
+                    <rect key="frame" x="0.0" y="437" width="600" height="29"/>
+                    <color key="backgroundColor" red="0.63286212701646116" green="0.63286212701646116" blue="0.63286212701646116" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
+                    <state key="normal" title="Cadastre-se">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
