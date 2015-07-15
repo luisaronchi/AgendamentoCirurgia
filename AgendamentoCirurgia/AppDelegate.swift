@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ...
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        var mainViewController = LoginVC(nibName: "LoginVC", bundle: nil)
+        var mainViewController = RequestVC(nibName: "RequestVC", bundle: nil)
         
         window?.rootViewController = mainViewController
         window?.makeKeyAndVisible()
