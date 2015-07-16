@@ -130,7 +130,7 @@
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data Pretendida" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-6x-6KV">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data pretendida" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-6x-6KV">
                                             <rect key="frame" x="16" y="524" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
