@@ -356,13 +356,5 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="298" y="-160"/>
         </view>
-        <navigationBar contentMode="scaleToFill" id="Wfg-Qg-crB">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <color key="barTintColor" red="0.58039215690000001" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-            <textAttributes key="titleTextAttributes">
-                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-            </textAttributes>
-        </navigationBar>
     </objects>
 </document>
