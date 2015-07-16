@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 import Bolts
+import Foundation
 
 class LoginVC: UIViewController {
     
@@ -22,6 +23,22 @@ class LoginVC: UIViewController {
     
     @IBAction func loginButton(sender: UIButton)
     {
+        if (emailField.text != "" && passwordField.text != "") {
+            //se esta vazio faco o seguinte
+        } else {
+        //vazio, notifique
+            println("xd")
+                let alertController = UIAlertController(title: "Atenção!", message:
+                    "Preencha os campos necessários!", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "ok!", style: UIAlertActionStyle.Default,handler: nil))
+                
+                
+                
+                self.presentViewController(alertController, animated: true, completion: nil)
+            
+
+
+        }
 
     }
     
@@ -79,9 +96,10 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         
         doctorModel = Doctor()
+        
         //um usuario pro teste
         doctorModel.fullName = "Carolina Mandia"
-        doctorModel.crm = 321312
+        doctorModel.crm = 321362
         doctorModel.cpf = 666666
         doctorModel.speaciality = "Neurologista"
         doctorModel.email = "carolbolada@outlook.com"
