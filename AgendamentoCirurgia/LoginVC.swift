@@ -23,6 +23,9 @@ class LoginVC: UIViewController {
     
     @IBAction func loginButton(sender: UIButton)
     {
+        var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
+        self.presentViewController(controller, animated: true, completion: nil)
+        
         if (emailField.text != "" && passwordField.text != "") {
             //se esta vazio faco o seguinte
         } else {
