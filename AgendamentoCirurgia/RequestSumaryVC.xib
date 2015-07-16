@@ -80,7 +80,7 @@
                                                 <constraint firstAttribute="width" constant="600" id="cow-CW-0Lv"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VM1-nW-nc5" userLabel="GambiarraView">
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VM1-nW-nc5" userLabel="GambiarraView">
                                             <rect key="frame" x="0.0" y="524" width="600" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Data pretendida" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xoz-uC-7aY">
@@ -96,7 +96,7 @@
                                                 <constraint firstAttribute="width" constant="600" id="sgx-Iv-G5l"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIV-y0-BFT" userLabel="GambiarraView">
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIV-y0-BFT" userLabel="GambiarraView">
                                             <rect key="frame" x="0.0" y="483" width="600" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo de cirurgia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJT-z6-5tI">
@@ -144,7 +144,7 @@
                                                 <constraint firstAttribute="width" constant="600" id="zbJ-qP-Ku7"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ng-aC-ilE" userLabel="GambiarraView">
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ng-aC-ilE" userLabel="GambiarraView">
                                             <rect key="frame" x="0.0" y="242" width="600" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Convênio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYc-pN-N9G">
@@ -160,7 +160,7 @@
                                                 <constraint firstAttribute="width" constant="600" id="URh-wY-wvu"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ury-mi-tPb" userLabel="GambiarraView">
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ury-mi-tPb" userLabel="GambiarraView">
                                             <rect key="frame" x="0.0" y="201" width="600" height="40"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nascimento" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R91-KE-xG8">
@@ -192,7 +192,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="WcN-dr-AgG"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="DADOS DA CIRURGIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwx-RW-UdL">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DADOS DA CIRURGIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pwx-RW-UdL">
                                             <rect key="frame" x="16" y="463" width="584" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="12" id="fwD-uX-o0b"/>
