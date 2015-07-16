@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RequestVC: UIViewController {
+class RequestVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameField: UITextField!
     
@@ -28,16 +28,45 @@ class RequestVC: UIViewController {
     
     @IBOutlet weak var observationField: UITextField!
     
+    var dt : NSDate = NSDate()
+
+    @IBAction func textFieldEditing(sender: UITextField) {
+        var datePickerView: UIDatePicker = UIDatePicker()
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        sender.inputView = datePickerView
+        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func datePickerValueChanged(sender: UIDatePicker) {
+        var dateformatter = NSDateFormatter()
+        dateformatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        birthField.text = dateformatter.stringFromDate(sender.date)
+        
+        dt = sender.date
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var data: NSDate = NSDate()
         
+        birthField.delegate = self
 
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
-
+func didReceiveMemoryWarning()
+    
+{
+   didReceiveMemoryWarning()
 }
+
+
+
+
+
+
+
+
