@@ -7,21 +7,21 @@
 //
 
 import Foundation
-
-func create() {
-    
-}
-
-func readWithID(){
-    
-}
-
-func uptade() {
-    
-}
-
-func observe() {
-    
-}
-
-
+//
+//func create() {
+//    
+//}
+//
+//func readWithID(){
+//    
+//}
+//
+//func uptade() {
+//    
+//}
+//
+//func observe() {
+//    
+//}
+//
+//
