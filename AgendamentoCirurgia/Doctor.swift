@@ -17,6 +17,7 @@ class Doctor {
     var email: String!
     var officeTelephone: Int!
     var emergencyTelephone: Int!
+    var password: Int!
     
 
     init () {

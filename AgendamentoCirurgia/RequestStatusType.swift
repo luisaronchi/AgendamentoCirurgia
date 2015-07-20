@@ -6,4 +6,15 @@
 //  Copyright (c) 2015 BEPiD. All rights reserved.
 //
 
-import Foundation
+enum RequestStatusType {
+    
+    case Sent(Int)
+    case HospitalOK(Int)
+    case InsuranceOK(Int)
+    case Denied(Int)
+    case Finalized(Int)
+}
+    
+
+
+

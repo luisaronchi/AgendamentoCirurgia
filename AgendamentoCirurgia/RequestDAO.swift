@@ -8,3 +8,20 @@
 
 import Foundation
 
+func create() {
+    
+}
+
+func readWithID(){
+    
+}
+
+func uptade() {
+    
+}
+
+func observe() {
+    
+}
+
+
