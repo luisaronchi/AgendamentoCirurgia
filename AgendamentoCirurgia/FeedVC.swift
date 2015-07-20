@@ -10,6 +10,11 @@ import UIKit
 
 class FeedVC: UIViewController {
 
+    @IBAction func NewRequest(sender: UIButton) {
+        
+        var controller: RequestVC = RequestVC(nibName:"RequestVC", bundle:NSBundle.mainBundle())
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
     @IBOutlet weak var tableFeed: UITableView!
     
     @IBOutlet weak var segment: UISegmentedControl!

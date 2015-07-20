@@ -11,9 +11,20 @@ import UIKit
 class RequestVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameField: UITextField!
-    
-    @IBOutlet weak var birthField: UITextField!
 
+    @IBAction func TextFieldEditing(sender: UITextField) {
+        
+        
+        var datePickerView:UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+
+    }
+    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var insuranceField: UITextField!
     
     @IBOutlet weak var nameDoctorField: UITextField!
@@ -22,51 +33,49 @@ class RequestVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var surgeryTypeField: UITextField!
     
-    @IBOutlet weak var surgeryDateField: UITextField!
+   
+    @IBOutlet weak var SurgeryDate: UITextField!
+  
+    @IBAction func SurgeryDatePicker(sender: UITextField) {
+        var datePickerView:UIDatePicker = UIDatePicker()
+        
+        datePickerView.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = datePickerView
+        
+        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
     
     @IBOutlet weak var materialField: UITextField!
     
     @IBOutlet weak var observationField: UITextField!
     
-    var dt : NSDate = NSDate()
-
-    @IBAction func textFieldEditing(sender: UITextField) {
-        var datePickerView: UIDatePicker = UIDatePicker()
-        datePickerView.datePickerMode = UIDatePickerMode.Date
-        sender.inputView = datePickerView
-        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-    }
-    
-    func datePickerValueChanged(sender: UIDatePicker) {
-        var dateformatter = NSDateFormatter()
-        dateformatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        birthField.text = dateformatter.stringFromDate(sender.date)
+    func datePickerValueChanged(sender:UIDatePicker) {
         
-        dt = sender.date
-    }
+        var dateFormatter = NSDateFormatter()
+        
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        
+        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
+        dateTextField.text = dateFormatter.stringFromDate(sender.date)
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        var data: NSDate = NSDate()
-        
-        birthField.delegate = self
-
-    }
-
-    }
-
-func didReceiveMemoryWarning()
-    
-{
-   didReceiveMemoryWarning()
+        func datePickerValueChanged(sender:UIDatePicker) {
+            
+            var dateFormatter = NSDateFormatter()
+            
+            dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+            
+            dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+            
+            SurgeryDate.text = dateFormatter.stringFromDate(sender.date)
 }
 
+ func didReceiveMemoryWarning()
+    
+{
+}
 
-
-
-
-
-
-
+}
+}

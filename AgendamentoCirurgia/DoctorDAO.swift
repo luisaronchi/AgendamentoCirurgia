@@ -10,23 +10,23 @@ import Foundation
 import Parse
 import UIKit
 
-
-func create {
-    
-}
-
-func readWithID() {
-    
-}
-
-func readAll(){
-    
-}
-
-func uptade(){
-    
-}
-
-func observe(){
-    
-}
+//
+//func create {
+//    
+//}
+//
+//func readWithID() {
+//    
+//}
+//
+//func readAll(){
+//    
+//}
+//
+//func uptade(){
+//    
+//}
+//
+//func observe(){
+//    
+//}

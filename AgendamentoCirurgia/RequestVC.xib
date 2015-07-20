@@ -23,14 +23,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
-                <outlet property="birthField" destination="WK1-dV-QG8" id="Qhg-kw-ND3"/>
+                <outlet property="SurgeryDate" destination="gXS-6x-6KV" id="6Nc-p3-4kn"/>
+                <outlet property="dateTextField" destination="WK1-dV-QG8" id="IGp-Zi-USY"/>
                 <outlet property="insuranceField" destination="JzB-Zm-56n" id="Zli-Fy-nYy"/>
                 <outlet property="materialField" destination="c6p-IP-ozS" id="GL2-99-dN1"/>
                 <outlet property="nameDoctorField" destination="MYO-72-9js" id="HI5-EW-nl0"/>
                 <outlet property="nameField" destination="rJj-93-FX9" id="WTd-8d-W61"/>
                 <outlet property="observationField" destination="SOy-9K-cAY" id="zeW-gC-Fn8"/>
                 <outlet property="phoneField" destination="AIR-4x-xoY" id="8P8-mz-B1k"/>
-                <outlet property="surgeryDateField" destination="gXS-6x-6KV" id="Taq-NV-GjL"/>
                 <outlet property="surgeryTypeField" destination="iaA-4g-p5H" id="yt0-N6-Rgz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -138,6 +138,9 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <action selector="SurgeryDatePicker:" destination="-1" eventType="editingDidBegin" id="Qyn-KU-emh"/>
+                                            </connections>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS DA CIRURGIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-Ts-JNw">
                                             <rect key="frame" x="16" y="463" width="584" height="12"/>
@@ -193,8 +196,8 @@
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-dV-QG8">
-                                            <rect key="frame" x="16" y="201" width="584" height="40"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-dV-QG8">
+                                            <rect key="frame" x="16" y="201" width="175" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="kzj-gY-zjl"/>
@@ -202,7 +205,7 @@
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
-                                                <action selector="textFieldEditing:" destination="-1" eventType="editingDidEnd" id="JQx-ws-JlK"/>
+                                                <action selector="TextFieldEditing:" destination="-1" eventType="editingDidBegin" id="8aa-3H-cVl"/>
                                             </connections>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS DO MÉDICO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-1o-act">
