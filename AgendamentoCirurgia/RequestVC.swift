@@ -38,11 +38,29 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     {
         super.viewDidLoad()
         
+        //navigationbar setup
+    
+        self.navigationItem.title = "Requerimento de cirurgia"
+        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
+        
+        //
         dateTextField.delegate = self
         SurgeryDate.delegate = self
         
         let tap = UITapGestureRecognizer(target: self, action: "didTapView")
         view.addGestureRecognizer(tap)
+    }
+    
+    @IBAction func buttonclicked(sender: UIBarButtonItem) {
+       
+        println("xd")
+        let alertController = UIAlertController(title: "Requerimento Enviado!", message:
+            "Adicionado ao feed", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
+        
+        
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 
     func didTapView () {

@@ -18,6 +18,7 @@
 		3F3EFC951B56EC7B00AC55BC /* RequestSumaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F3EFC931B56EC7B00AC55BC /* RequestSumaryVC.xib */; };
 		3FD1A2AB1B569843005BC804 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD1A2A91B569843005BC804 /* FeedVC.swift */; };
 		3FD1A2AC1B569843005BC804 /* FeedVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FD1A2AA1B569843005BC804 /* FeedVC.xib */; };
+		961954CE1B5EBA40005B95EC /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A50267371B56BAE900DA2B53 /* MyriadPro-Regular.otf */; };
 		968259671B56F0BB008A5872 /* LogoRedeDor.png in Resources */ = {isa = PBXBuildFile; fileRef = 968259661B56F0BB008A5872 /* LogoRedeDor.png */; };
 		A502673A1B56C43C00DA2B53 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50267381B56C43C00DA2B53 /* LoginVC.swift */; };
 		A502673B1B56C43C00DA2B53 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50267391B56C43C00DA2B53 /* LoginVC.xib */; };
@@ -339,6 +340,7 @@
 				ABA1AE411B5417AA00467491 /* LaunchScreen.xib in Resources */,
 				968259671B56F0BB008A5872 /* LogoRedeDor.png in Resources */,
 				ABA1AE3E1B5417AA00467491 /* Images.xcassets in Resources */,
+				961954CE1B5EBA40005B95EC /* MyriadPro-Regular.otf in Resources */,
 				161409711B56F12C00680D9B /* Doctor.plist in Resources */,
 				A5D579411B5695E4006098EA /* RequestVC.xib in Resources */,
 				A502673B1B56C43C00DA2B53 /* LoginVC.xib in Resources */,

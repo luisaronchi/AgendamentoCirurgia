@@ -23,8 +23,11 @@ class LoginVC: UIViewController {
     
     @IBAction func loginButton(sender: UIButton)
     {
-        var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
-        self.presentViewController(controller, animated: true, completion: nil)
+        
+        let controller = FeedVC(nibName: "FeedVC", bundle: nil)
+        navigationController?.pushViewController(controller, animated: true)
+        println("oi")
+        
         
         if (emailField.text != "" && passwordField.text != "") {
             //se esta vazio faco o seguinte
@@ -39,14 +42,16 @@ class LoginVC: UIViewController {
                 
                 self.presentViewController(alertController, animated: true, completion: nil)
             
-
-
         }
 
     }
     
     @IBAction func singInButton(sender: UIButton)
     {
+        
+        let controller = RequestVC(nibName: "RequestVC", bundle: nil)
+        navigationController?.pushViewController(controller, animated: true)
+        println("oi")
         
     }
     //func esse espaco já tem preenchido?
