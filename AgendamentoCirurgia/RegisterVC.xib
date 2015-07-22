@@ -13,6 +13,7 @@
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -24,6 +25,7 @@
                 <outlet property="nameField" destination="SYJ-jl-Anp" id="5On-fe-q7d"/>
                 <outlet property="passwordField" destination="HRw-9h-O0O" id="ro7-Cr-gXs"/>
                 <outlet property="phoneField" destination="AGr-wz-ggd" id="NRx-mK-m1Q"/>
+                <outlet property="speciality" destination="eM5-2L-n6X" id="LNP-9C-GaY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -48,7 +50,7 @@
                         <constraint firstAttribute="height" constant="40" id="9zj-HT-d3T"/>
                     </constraints>
                 </view>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYJ-jl-Anp">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYJ-jl-Anp">
                     <rect key="frame" x="16" y="154" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980392156867" green="0.84705882352941175" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -137,8 +139,8 @@
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-lH-FjT">
-                    <rect key="frame" x="0.0" y="400" width="600" height="36"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-lH-FjT">
+                    <rect key="frame" x="0.0" y="451" width="600" height="36"/>
                     <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="9Gb-5k-Noi"/>
@@ -152,6 +154,24 @@
                         <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="qcF-dR-Vhf"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qZ-s7-aNo" userLabel="GambiarraViewTelefone">
+                    <rect key="frame" x="0.0" y="400" width="600" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Especialidade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-2L-n6X">
+                            <rect key="frame" x="16" y="0.0" width="584" height="40"/>
+                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dxp-p3-67P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="yBy-GJ-34d"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

@@ -22,6 +22,8 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var emergencyPhoneField: UITextField!
     
+    @IBOutlet weak var speciality: UITextField!
+    
     @IBAction func signUpAction(sender: UIButton) {
     }
     
