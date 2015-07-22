@@ -27,6 +27,7 @@
             <connections>
                 <outlet property="SurgeryDate" destination="gXS-6x-6KV" id="6Nc-p3-4kn"/>
                 <outlet property="dateTextField" destination="WK1-dV-QG8" id="IGp-Zi-USY"/>
+                <outlet property="genderField" destination="lQe-53-XMm" id="x3H-0g-hTB"/>
                 <outlet property="insuranceField" destination="JzB-Zm-56n" id="Zli-Fy-nYy"/>
                 <outlet property="materialField" destination="c6p-IP-ozS" id="GL2-99-dN1"/>
                 <outlet property="nameDoctorField" destination="MYO-72-9js" id="HI5-EW-nl0"/>

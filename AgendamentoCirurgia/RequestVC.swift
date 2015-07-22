@@ -18,6 +18,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBOutlet weak var insuranceField: UITextField!
     
+    @IBOutlet weak var genderField: UITextField!
+    
     @IBOutlet weak var nameDoctorField: UITextField!
     
     @IBOutlet weak var phoneField: UITextField!
@@ -57,8 +59,6 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         let alertController = UIAlertController(title: "Requerimento Enviado!", message:
             "Adicionado ao feed", preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
-        
-        
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
@@ -117,7 +117,7 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
-        if mediaType.isEqualToString(kUTTypeImage as! NSString as String) {
+        if mediaType.isEqualToString(kUTTypeImage as NSString as String) {
             let image = info[UIImagePickerControllerOriginalImage]
                 as! UIImage
             

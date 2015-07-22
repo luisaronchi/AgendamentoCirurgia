@@ -49,11 +49,12 @@ class LoginVC: UIViewController {
     @IBAction func singInButton(sender: UIButton)
     {
         
-        let controller = RequestVC(nibName: "RequestVC", bundle: nil)
+        let controller = RegisterVC(nibName: "RegisterVC", bundle: nil)
         navigationController?.pushViewController(controller, animated: true)
         println("oi")
         
     }
+    
     //func esse espaco já tem preenchido?
     
     func isDataAvailable (doctor: Doctor)
@@ -102,6 +103,8 @@ class LoginVC: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        
         
         doctorModel = Doctor()
         
