@@ -19,10 +19,6 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-Hp-HB3">
                     <rect key="frame" x="0.0" y="148" width="584" height="452"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="Sre-64-bTO"/>
-                        <outlet property="delegate" destination="-1" id="Bf4-gc-V00"/>
-                    </connections>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-LQ-rmK">
                     <rect key="frame" x="50" y="80" width="500" height="29"/>
@@ -42,9 +38,6 @@
                     <state key="normal" title="+">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="NewRequest:" destination="-1" eventType="touchUpInside" id="Je3-uP-MGN"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

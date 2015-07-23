@@ -20,18 +20,11 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var phoneField: UITextField!
     
-    @IBOutlet weak var emergencyPhoneField: UITextField!
-    
-    @IBOutlet weak var speciality: UITextField!
-    
     @IBAction func signUpAction(sender: UIButton) {
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //navigationbar setup
-         self.navigationItem.title = "Cadastro"
 
     }
 

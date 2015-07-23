@@ -48,7 +48,7 @@
                         <constraint firstAttribute="height" constant="40" id="Y5Q-Ph-kWI"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MG0-Za-6hG">
                     <rect key="frame" x="-16" y="614" width="632" height="41"/>

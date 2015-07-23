@@ -18,23 +18,19 @@
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
-            <string>MyriadPro-Regular</string>
-            <string>MyriadPro-Regular</string>
-            <string>MyriadPro-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
-                <outlet property="SurgeryDate" destination="gXS-6x-6KV" id="6Nc-p3-4kn"/>
-                <outlet property="dateTextField" destination="WK1-dV-QG8" id="IGp-Zi-USY"/>
-                <outlet property="genderField" destination="lQe-53-XMm" id="x3H-0g-hTB"/>
+                <outlet property="birthField" destination="WK1-dV-QG8" id="Qhg-kw-ND3"/>
                 <outlet property="insuranceField" destination="JzB-Zm-56n" id="Zli-Fy-nYy"/>
                 <outlet property="materialField" destination="c6p-IP-ozS" id="GL2-99-dN1"/>
                 <outlet property="nameDoctorField" destination="MYO-72-9js" id="HI5-EW-nl0"/>
                 <outlet property="nameField" destination="rJj-93-FX9" id="WTd-8d-W61"/>
                 <outlet property="observationField" destination="SOy-9K-cAY" id="zeW-gC-Fn8"/>
                 <outlet property="phoneField" destination="AIR-4x-xoY" id="8P8-mz-B1k"/>
+                <outlet property="surgeryDateField" destination="gXS-6x-6KV" id="Taq-NV-GjL"/>
                 <outlet property="surgeryTypeField" destination="iaA-4g-p5H" id="yt0-N6-Rgz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -53,8 +49,40 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hu0-9A-EPJ" userLabel="ContentView">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="900"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-h4-jeg" userLabel="GambiarraView">
+                                            <rect key="frame" x="0.0" y="606" width="600" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="600" id="bGC-6i-zRf"/>
+                                                <constraint firstAttribute="height" constant="40" id="vaw-tZ-bUD"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovA-Kn-Y41" userLabel="GambiarraView">
+                                            <rect key="frame" x="0.0" y="565" width="600" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="600" id="OV5-Xh-x71"/>
+                                                <constraint firstAttribute="height" constant="40" id="VNF-g2-vM1"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br4-TO-phx" userLabel="GambiarraView">
+                                            <rect key="frame" x="0.0" y="524" width="600" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="600" id="AXr-od-6Pe"/>
+                                                <constraint firstAttribute="height" constant="40" id="Jkx-Zs-8p2"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68p-zW-nsm" userLabel="GambiarraView">
+                                            <rect key="frame" x="0.0" y="483" width="600" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="5xK-ZZ-m3Q"/>
+                                                <constraint firstAttribute="width" constant="600" id="wMh-O4-ALo"/>
+                                            </constraints>
+                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dW-oY-Ezx" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="384" width="600" height="40"/>
+                                            <rect key="frame" x="0.0" y="383" width="600" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="Lge-PC-SLX"/>
@@ -62,7 +90,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQ7-jL-Ujw" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="343" width="600" height="40"/>
+                                            <rect key="frame" x="0.0" y="342" width="600" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="600" id="P1K-Rh-Evr"/>
@@ -70,7 +98,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ly-HC-TaO" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="202" width="600" height="40"/>
+                                            <rect key="frame" x="0.0" y="242" width="600" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="G0D-5J-eVF"/>
@@ -78,7 +106,7 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qmZ-zH-yuq" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="161" width="600" height="40"/>
+                                            <rect key="frame" x="0.0" y="201" width="600" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="9ON-yf-Kzx"/>
@@ -86,15 +114,69 @@
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pYd-3a-olV" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="120" width="600" height="40"/>
+                                            <rect key="frame" x="0.0" y="160" width="600" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="600" id="LUv-uI-Kqm"/>
                                                 <constraint firstAttribute="height" constant="40" id="Pmd-Zo-2sW"/>
                                             </constraints>
                                         </view>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-93-FX9">
-                                            <rect key="frame" x="16" y="120" width="584" height="40"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Materiais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6p-IP-ozS">
+                                            <rect key="frame" x="16" y="565" width="584" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="cHs-vY-PQF"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data pretendida" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-6x-6KV">
+                                            <rect key="frame" x="16" y="524" width="584" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="l1I-dF-pZB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS DA CIRURGIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-Ts-JNw">
+                                            <rect key="frame" x="16" y="463" width="584" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="12" id="GY8-na-pve"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                            <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tipo de cirurgia" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaA-4g-p5H">
+                                            <rect key="frame" x="16" y="483" width="584" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="nBa-mM-xaq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Observação" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-9K-cAY">
+                                            <rect key="frame" x="16" y="606" width="584" height="40"/>
+                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="A0u-Jo-lAU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PEDIDO MÉDICO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCw-pK-21U">
+                                            <rect key="frame" x="16" y="686" width="584" height="12"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="12" id="hLf-aQ-d0a"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
+                                            <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-93-FX9">
+                                            <rect key="frame" x="16" y="160" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="4s5-BL-RvT"/>
@@ -103,7 +185,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Convênio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzB-Zm-56n">
-                                            <rect key="frame" x="16" y="202" width="584" height="40"/>
+                                            <rect key="frame" x="16" y="242" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="c02-If-YsV"/>
@@ -112,7 +194,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-dV-QG8">
-                                            <rect key="frame" x="16" y="161" width="584" height="40"/>
+                                            <rect key="frame" x="16" y="201" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="kzj-gY-zjl"/>
@@ -120,11 +202,11 @@
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                             <connections>
-                                                <action selector="TextFieldEditing:" destination="-1" eventType="editingDidBegin" id="8aa-3H-cVl"/>
+                                                <action selector="textFieldEditing:" destination="-1" eventType="editingDidEnd" id="JQx-ws-JlK"/>
                                             </connections>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS DO MÉDICO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMQ-1o-act">
-                                            <rect key="frame" x="16" y="323" width="584" height="12"/>
+                                            <rect key="frame" x="16" y="322" width="584" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="12" id="aCw-M8-6Zc"/>
                                             </constraints>
@@ -132,8 +214,8 @@
                                             <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYO-72-9js">
-                                            <rect key="frame" x="16" y="343" width="584" height="40"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MYO-72-9js">
+                                            <rect key="frame" x="16" y="342" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="MQQ-3g-MQb"/>
@@ -142,7 +224,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIR-4x-xoY">
-                                            <rect key="frame" x="16" y="384" width="584" height="40"/>
+                                            <rect key="frame" x="16" y="383" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="UKg-lZ-yf3"/>
@@ -151,190 +233,31 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS PESSOAIS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-91-5DZ">
-                                            <rect key="frame" x="16" y="100" width="576" height="12"/>
+                                            <rect key="frame" x="16" y="140" width="576" height="12"/>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
                                             <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sig-s3-TYh" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="727" width="600" height="40"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="anexo.png" translatesAutoresizingMaskIntoConstraints="NO" id="erb-rD-yv4">
-                                                    <rect key="frame" x="16" y="10" width="20" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="20" id="eNU-MX-zNW"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="lbm-nx-p09"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-fK-AxF">
-                                                    <rect key="frame" x="44" y="0.0" width="86" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="u5v-DH-AcN"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                                    <state key="normal" title="Anexar pedido">
-                                                        <color key="titleColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="u5v-DH-AcN"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <connections>
-                                                        <action selector="useCameraRoll:" destination="-1" eventType="touchUpInside" id="wmZ-qq-5vH"/>
-                                                    </connections>
-                                                </button>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ob3-Jh-d1s">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="600" id="737-5L-4aY"/>
-                                                <constraint firstItem="erb-rD-yv4" firstAttribute="leading" secondItem="Sig-s3-TYh" secondAttribute="leading" constant="16" id="B3c-F7-sgZ"/>
-                                                <constraint firstAttribute="trailing" secondItem="SFQ-fK-AxF" secondAttribute="trailing" constant="470" id="H9g-gr-mBh"/>
-                                                <constraint firstItem="erb-rD-yv4" firstAttribute="top" secondItem="Sig-s3-TYh" secondAttribute="top" constant="10" id="Izf-Id-Zif"/>
-                                                <constraint firstAttribute="bottom" secondItem="SFQ-fK-AxF" secondAttribute="bottom" id="Pul-xS-eds"/>
-                                                <constraint firstItem="SFQ-fK-AxF" firstAttribute="top" secondItem="Sig-s3-TYh" secondAttribute="top" id="SXa-ds-A4q"/>
-                                                <constraint firstAttribute="height" constant="40" id="ggT-4s-Orw"/>
-                                                <constraint firstItem="SFQ-fK-AxF" firstAttribute="leading" secondItem="erb-rD-yv4" secondAttribute="trailing" constant="8" id="i9y-64-8Hn"/>
-                                                <constraint firstAttribute="bottom" secondItem="erb-rD-yv4" secondAttribute="bottom" constant="10" id="nNv-Nm-F8r"/>
+                                                <constraint firstAttribute="height" constant="70" id="mFx-sf-l1D"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="737-5L-4aY"/>
-                                                    <exclude reference="H9g-gr-mBh"/>
-                                                </mask>
-                                            </variation>
-                                        </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvq-ae-56z" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="243" width="600" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="78R-HW-7Eh"/>
-                                            </constraints>
-                                        </view>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Gênero" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQe-53-XMm" userLabel="Gênero">
-                                            <rect key="frame" x="16" y="243" width="584" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-h4-jeg" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="641" width="600" height="40"/>
-                                            <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Observações" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-9K-cAY">
-                                                    <rect key="frame" x="16" y="0.0" width="584" height="40"/>
-                                                    <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="A0u-Jo-lAU"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
-                                            </subviews>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="600" id="bGC-6i-zRf"/>
-                                                <constraint firstAttribute="height" constant="40" id="vaw-tZ-bUD"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovA-Kn-Y41" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="600" width="600" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="600" id="OV5-Xh-x71"/>
-                                                <constraint firstAttribute="height" constant="40" id="VNF-g2-vM1"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Br4-TO-phx" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="559" width="600" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="600" id="AXr-od-6Pe"/>
-                                                <constraint firstAttribute="height" constant="40" id="Jkx-Zs-8p2"/>
-                                            </constraints>
-                                        </view>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68p-zW-nsm" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="518" width="600" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="5xK-ZZ-m3Q"/>
-                                                <constraint firstAttribute="width" constant="600" id="wMh-O4-ALo"/>
-                                            </constraints>
-                                        </view>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Materiais" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6p-IP-ozS">
-                                            <rect key="frame" x="16" y="600" width="584" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="cHs-vY-PQF"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data Pretendida" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-6x-6KV">
-                                            <rect key="frame" x="16" y="559" width="584" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="l1I-dF-pZB"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                            <connections>
-                                                <action selector="SurgeryDatePicker:" destination="-1" eventType="editingDidBegin" id="Qyn-KU-emh"/>
-                                            </connections>
-                                        </textField>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DADOS DA CIRURGIA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-Ts-JNw">
-                                            <rect key="frame" x="16" y="498" width="584" height="12"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="12" id="GY8-na-pve"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
-                                            <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Procedimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iaA-4g-p5H">
-                                            <rect key="frame" x="16" y="518" width="584" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="nBa-mM-xaq"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-Q8-rmZ" userLabel="GambiarraView">
-                                            <rect key="frame" x="0.0" y="425" width="600" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="600" id="rkK-x5-FNN"/>
-                                                <constraint firstAttribute="height" constant="40" id="srN-1I-BNz"/>
-                                            </constraints>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="PEDIDO MÉDICO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCw-pK-21U">
-                                            <rect key="frame" x="16" y="709" width="584" height="12"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="12" id="hLf-aQ-d0a"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="12"/>
-                                            <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome da Secretária" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VtC-hF-IKD">
-                                            <rect key="frame" x="16" y="425" width="584" height="40"/>
-                                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="dkK-4O-tuj"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
+                                            <color key="barTintColor" red="0.58039215690000001" green="0.79215686269999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textAttributes key="titleTextAttributes">
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </textAttributes>
+                                            <items>
+                                                <navigationItem title="Requerimento de cirurgia" id="rU0-mx-0ig"/>
+                                            </items>
+                                        </navigationBar>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="Plw-91-5DZ" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="01M-pS-F7C"/>
-                                        <constraint firstItem="Sig-s3-TYh" firstAttribute="top" secondItem="rCw-pK-21U" secondAttribute="bottom" constant="8" id="0LE-t8-TmN"/>
-                                        <constraint firstItem="Mvq-ae-56z" firstAttribute="bottom" secondItem="lQe-53-XMm" secondAttribute="bottom" id="0Zo-tx-6pp"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ob3-Jh-d1s" secondAttribute="trailing" id="1tn-G1-Uh7"/>
                                         <constraint firstItem="ovA-Kn-Y41" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="2F2-OK-kcy"/>
                                         <constraint firstItem="Br4-TO-phx" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="2P0-Fe-NLO"/>
-                                        <constraint firstItem="Mvq-ae-56z" firstAttribute="height" secondItem="lQe-53-XMm" secondAttribute="height" id="2Ve-By-c0t"/>
                                         <constraint firstItem="rCw-pK-21U" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="3ED-f4-Iiz"/>
                                         <constraint firstAttribute="trailing" secondItem="0ly-HC-TaO" secondAttribute="trailing" id="3bG-3w-wZb"/>
                                         <constraint firstItem="SBF-Ts-JNw" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="3rM-yc-v1t"/>
@@ -343,37 +266,34 @@
                                         <constraint firstItem="ovA-Kn-Y41" firstAttribute="top" secondItem="gXS-6x-6KV" secondAttribute="bottom" constant="1" id="5jU-3y-qGy"/>
                                         <constraint firstItem="AIR-4x-xoY" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="69C-dY-ijk"/>
                                         <constraint firstItem="WK1-dV-QG8" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="7um-HP-A6z"/>
+                                        <constraint firstItem="rCw-pK-21U" firstAttribute="top" secondItem="SOy-9K-cAY" secondAttribute="bottom" constant="40" id="8Vg-0F-lJe"/>
                                         <constraint firstAttribute="trailing" secondItem="qmZ-zH-yuq" secondAttribute="trailing" id="906-tA-z0h"/>
                                         <constraint firstAttribute="height" constant="900" id="9Y7-cY-09G"/>
                                         <constraint firstItem="MYO-72-9js" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="9va-Im-2PZ"/>
                                         <constraint firstAttribute="trailing" secondItem="2dW-oY-Ezx" secondAttribute="trailing" id="BDu-ye-aC9"/>
                                         <constraint firstItem="rJj-93-FX9" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="BvN-sR-SCl"/>
-                                        <constraint firstItem="Sig-s3-TYh" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="ByB-ES-3kC"/>
                                         <constraint firstAttribute="trailing" secondItem="c6p-IP-ozS" secondAttribute="trailing" id="C4U-J5-Ylh"/>
+                                        <constraint firstItem="SOy-9K-cAY" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="DKN-WW-dgY"/>
                                         <constraint firstItem="iaA-4g-p5H" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="EC2-4x-8fr"/>
                                         <constraint firstAttribute="trailing" secondItem="pYd-3a-olV" secondAttribute="trailing" id="EGP-qU-IGB"/>
                                         <constraint firstItem="LQ7-jL-Ujw" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="FPZ-RJ-YJM"/>
                                         <constraint firstItem="uMQ-1o-act" firstAttribute="top" secondItem="JzB-Zm-56n" secondAttribute="bottom" constant="40" id="GUj-4Q-Q2a"/>
-                                        <constraint firstAttribute="trailing" secondItem="Sig-s3-TYh" secondAttribute="trailing" id="H5m-b3-hYv"/>
+                                        <constraint firstAttribute="trailing" secondItem="SOy-9K-cAY" secondAttribute="trailing" id="HKV-Iu-AXy"/>
                                         <constraint firstItem="LQ7-jL-Ujw" firstAttribute="top" secondItem="uMQ-1o-act" secondAttribute="bottom" constant="8" id="Hsp-JW-Et1"/>
                                         <constraint firstItem="mVZ-h4-jeg" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="I4l-js-Dq3"/>
                                         <constraint firstItem="0ly-HC-TaO" firstAttribute="top" secondItem="WK1-dV-QG8" secondAttribute="bottom" constant="1" id="IDG-dJ-1ee"/>
                                         <constraint firstItem="2dW-oY-Ezx" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="Jk8-WR-hw6"/>
                                         <constraint firstAttribute="trailing" secondItem="AIR-4x-xoY" secondAttribute="trailing" id="Mg1-CD-y3v"/>
                                         <constraint firstItem="WK1-dV-QG8" firstAttribute="top" secondItem="rJj-93-FX9" secondAttribute="bottom" constant="1" id="O9G-oH-nJi"/>
-                                        <constraint firstItem="uMQ-1o-act" firstAttribute="top" secondItem="Mvq-ae-56z" secondAttribute="bottom" constant="40" id="OSe-9w-2Br"/>
-                                        <constraint firstItem="Mvq-ae-56z" firstAttribute="trailing" secondItem="lQe-53-XMm" secondAttribute="trailing" id="PrG-qu-JZj"/>
+                                        <constraint firstItem="SOy-9K-cAY" firstAttribute="top" secondItem="c6p-IP-ozS" secondAttribute="bottom" constant="1" id="OsM-D5-p1Y"/>
                                         <constraint firstAttribute="trailing" secondItem="68p-zW-nsm" secondAttribute="trailing" id="Q1h-D7-ULF"/>
-                                        <constraint firstItem="Mvq-ae-56z" firstAttribute="top" secondItem="lQe-53-XMm" secondAttribute="top" id="R46-Vb-uSH"/>
                                         <constraint firstItem="c6p-IP-ozS" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="RrF-V0-i99"/>
                                         <constraint firstItem="gXS-6x-6KV" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="Saw-Ve-YhM"/>
                                         <constraint firstItem="68p-zW-nsm" firstAttribute="top" secondItem="SBF-Ts-JNw" secondAttribute="bottom" constant="8" id="Sxi-Nf-9dv"/>
                                         <constraint firstItem="0ly-HC-TaO" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="VSm-Ka-OIM"/>
-                                        <constraint firstAttribute="trailing" secondItem="Mvq-ae-56z" secondAttribute="trailing" id="VWk-uJ-pyE"/>
                                         <constraint firstAttribute="trailing" secondItem="mVZ-h4-jeg" secondAttribute="trailing" id="VZR-3x-n5Y"/>
                                         <constraint firstAttribute="trailing" secondItem="MYO-72-9js" secondAttribute="trailing" id="Vvl-o2-c7g"/>
                                         <constraint firstAttribute="trailing" secondItem="rCw-pK-21U" secondAttribute="trailing" id="Y5l-du-OmH"/>
-                                        <constraint firstItem="Sig-s3-TYh" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="YYb-Ng-5UP"/>
                                         <constraint firstAttribute="trailing" secondItem="LQ7-jL-Ujw" secondAttribute="trailing" id="Yws-Kh-kae"/>
                                         <constraint firstItem="qmZ-zH-yuq" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="aRJ-Hq-wd8"/>
                                         <constraint firstItem="JzB-Zm-56n" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="aZY-6R-EI9"/>
@@ -382,12 +302,12 @@
                                         <constraint firstAttribute="trailing" secondItem="uMQ-1o-act" secondAttribute="trailing" id="c2W-SZ-QV3"/>
                                         <constraint firstAttribute="trailing" secondItem="Plw-91-5DZ" secondAttribute="trailing" constant="8" id="cyT-sw-Guj"/>
                                         <constraint firstItem="AIR-4x-xoY" firstAttribute="top" secondItem="MYO-72-9js" secondAttribute="bottom" constant="1" id="dBf-ug-Dwq"/>
-                                        <constraint firstItem="Sig-s3-TYh" firstAttribute="leading" secondItem="mVZ-h4-jeg" secondAttribute="leading" id="dGu-47-Uuz"/>
                                         <constraint firstItem="mVZ-h4-jeg" firstAttribute="top" secondItem="ovA-Kn-Y41" secondAttribute="bottom" constant="1" id="dHn-fz-qMH"/>
-                                        <constraint firstAttribute="trailing" secondItem="Sig-s3-TYh" secondAttribute="trailing" id="dpS-iJ-QjW"/>
                                         <constraint firstAttribute="trailing" secondItem="rJj-93-FX9" secondAttribute="trailing" id="f5m-3W-WND"/>
+                                        <constraint firstItem="Plw-91-5DZ" firstAttribute="top" secondItem="Ob3-Jh-d1s" secondAttribute="bottom" constant="70" id="faD-Ja-bdm"/>
                                         <constraint firstItem="pYd-3a-olV" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="fti-u9-mDl"/>
-                                        <constraint firstItem="Plw-91-5DZ" firstAttribute="top" secondItem="hu0-9A-EPJ" secondAttribute="top" constant="100" id="gnW-jx-tbG"/>
+                                        <constraint firstItem="Ob3-Jh-d1s" firstAttribute="top" secondItem="hu0-9A-EPJ" secondAttribute="top" id="gAa-tH-swt"/>
+                                        <constraint firstItem="Ob3-Jh-d1s" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="gWp-Aw-0XF"/>
                                         <constraint firstAttribute="trailing" secondItem="WK1-dV-QG8" secondAttribute="trailing" id="iYo-iV-qcF"/>
                                         <constraint firstAttribute="trailing" secondItem="Br4-TO-phx" secondAttribute="trailing" id="jHF-0M-MTu"/>
                                         <constraint firstItem="c6p-IP-ozS" firstAttribute="top" secondItem="gXS-6x-6KV" secondAttribute="bottom" constant="1" id="jX9-sc-zrb"/>
@@ -395,11 +315,8 @@
                                         <constraint firstItem="iaA-4g-p5H" firstAttribute="top" secondItem="SBF-Ts-JNw" secondAttribute="bottom" constant="8" id="le7-dE-rOX"/>
                                         <constraint firstItem="0ly-HC-TaO" firstAttribute="top" secondItem="qmZ-zH-yuq" secondAttribute="bottom" constant="1" id="mZN-uV-0A4"/>
                                         <constraint firstAttribute="trailing" secondItem="JzB-Zm-56n" secondAttribute="trailing" id="ohH-GY-Duz"/>
-                                        <constraint firstItem="Mvq-ae-56z" firstAttribute="top" secondItem="0ly-HC-TaO" secondAttribute="bottom" constant="1" id="pUB-8e-spr"/>
                                         <constraint firstAttribute="trailing" secondItem="ovA-Kn-Y41" secondAttribute="trailing" id="r6s-cv-CnS"/>
-                                        <constraint firstItem="Mvq-ae-56z" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="rfI-ii-7kf"/>
                                         <constraint firstItem="68p-zW-nsm" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" id="sBX-tm-qlL"/>
-                                        <constraint firstAttribute="trailing" secondItem="lQe-53-XMm" secondAttribute="trailing" id="u8f-dI-41n"/>
                                         <constraint firstItem="MYO-72-9js" firstAttribute="top" secondItem="uMQ-1o-act" secondAttribute="bottom" constant="8" id="v21-k6-KdB"/>
                                         <constraint firstItem="rJj-93-FX9" firstAttribute="top" secondItem="Plw-91-5DZ" secondAttribute="bottom" constant="8" id="vbC-yP-4AS"/>
                                         <constraint firstAttribute="trailing" secondItem="gXS-6x-6KV" secondAttribute="trailing" id="vuq-gF-yHw"/>
@@ -408,16 +325,7 @@
                                         <constraint firstItem="Br4-TO-phx" firstAttribute="top" secondItem="iaA-4g-p5H" secondAttribute="bottom" constant="1" id="xBi-Qy-hKB"/>
                                         <constraint firstItem="2dW-oY-Ezx" firstAttribute="top" secondItem="LQ7-jL-Ujw" secondAttribute="bottom" constant="1" id="xra-I7-ggF"/>
                                         <constraint firstItem="SBF-Ts-JNw" firstAttribute="top" secondItem="AIR-4x-xoY" secondAttribute="bottom" constant="40" id="y8k-rn-57U"/>
-                                        <constraint firstItem="lQe-53-XMm" firstAttribute="leading" secondItem="hu0-9A-EPJ" secondAttribute="leading" constant="16" id="ywL-PK-uek"/>
                                     </constraints>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="PrG-qu-JZj"/>
-                                            <exclude reference="GUj-4Q-Q2a"/>
-                                            <exclude reference="H5m-b3-hYv"/>
-                                            <exclude reference="YYb-Ng-5UP"/>
-                                        </mask>
-                                    </variation>
                                 </view>
                             </subviews>
                             <constraints>
@@ -449,7 +357,4 @@
             <point key="canvasLocation" x="298" y="-160"/>
         </view>
     </objects>
-    <resources>
-        <image name="anexo.png" width="700" height="596"/>
-    </resources>
 </document>

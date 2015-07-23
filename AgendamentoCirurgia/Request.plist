@@ -15,7 +15,7 @@
 	<key>patientBirth</key>
 	<date>2015-07-15T19:58:24Z</date>
 	<key>doctorApplication</key>
-	<string></string>
+	<data></data>
 	<key>surgeryType</key>
 	<string></string>
 	<key>doctorTelephone</key>
