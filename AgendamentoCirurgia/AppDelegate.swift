@@ -15,7 +15,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var navigationController: UINavigationController?
 
+
+    func UIColorFromRGB(rgbValue: UInt) -> UIColor {
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
+    }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool
     {
@@ -32,26 +42,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // ...
         
+        
+        //Front
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        // Override point for customization after application launch.
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.makeKeyAndVisible()
+        
+        // approach without storyboard
+        // Step 1: create view controller instance
+        // Step 2: create a navigation controller with view controller instance as root
+        // Step 3: navigation controller instance is set as rootviewcontroller of the window
+        var viewController = LoginVC(nibName: "LoginVC", bundle: nil)
+        self.navigationController = UINavigationController(rootViewController: viewController)
+        self.window!.rootViewController = self.navigationController
+        
+        var navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = UIColor.whiteColor()
+        navigationBarAppearace.barTintColor =  UIColorFromRGB(0xACD8FF)
+        
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        //navigationBarAppearace.titleTextAttributes = [NSFontAttributeName: UIFont(name: "MyriadPro-Regular.otf", size: 34)!]
 
-// **************************************
-//        Back                          *
-// **************************************
-
-//        var loginViewController = LoginVC(nibName: "LoginVC", bundle: nil)
-        
-// **************************************
-//        Front                         *
-// **************************************
-        
-//        var mainViewController = RequestVC(nibName: "RequestVC", bundle: nil)
-        
-        
-        
-        var loginViewController = LoginVC(nibName: "LoginVC", bundle: nil)
-        
-        window?.rootViewController = loginViewController
-        window?.makeKeyAndVisible()
+        //change status bar
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
     
         return true
     }

@@ -12,6 +12,8 @@ import Bolts
 import Foundation
 
 class LoginVC: UIViewController {
+    
+    var doctorModel: Doctor!
 
     @IBOutlet weak var emailField: UITextField!
     
@@ -19,81 +21,104 @@ class LoginVC: UIViewController {
 
     @IBOutlet weak var choiceSegment: UISegmentedControl!
     
-    @IBAction func loginButton(sender: UIButton){
+    @IBAction func loginButton(sender: UIButton)
+    {
+        
+        let controller = FeedVC(nibName: "FeedVC", bundle: nil)
+        navigationController?.pushViewController(controller, animated: true)
+        println("oi")
         
         
-        DoctorDAO.getUser(comEmail: self.emailField.text, callback: { user in
-            
-            if (user != nil) {
+        if (emailField.text != "" && passwordField.text != "") {
+            //se esta vazio faco o seguinte
+        } else {
+        //vazio, notifique
+            println("xd")
+                let alertController = UIAlertController(title: "Atenção!", message:
+                    "Preencha os campos necessários!", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "ok!", style: UIAlertActionStyle.Default,handler: nil))
                 
-                println(self.passwordField.text)
                 
-                if (user!.isPasswordOK(self.passwordField.text)) {
-                    
-                    DoctorDAO.setCurrentUser(self.emailField.text, password: self.passwordField.text)
-                    
-                    var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
-                    self.presentViewController(controller, animated: true, completion: nil)
-
-                    
-                    
-                } else {
-                    var alertView:UIAlertView = UIAlertView()
-                    alertView.title = "Ops!"
-                    alertView.message = "Please, check your password"
-                    alertView.delegate = self
-                    alertView.addButtonWithTitle("Ok")
-                    
-                    alertView.show()
-                }
                 
-            } else {
-                var alertView:UIAlertView = UIAlertView()
-                alertView.title = "Ops!"
-                alertView.message = "Check your user or password"
-                alertView.delegate = self
-                alertView.addButtonWithTitle("Ok")
-                
-                alertView.show()
-            }
+                self.presentViewController(alertController, animated: true, completion: nil)
             
-            
-            
-            
-        })
-
+        }
 
     }
-
-
     
     @IBAction func singInButton(sender: UIButton)
     {
         
+        let controller = RegisterVC(nibName: "RegisterVC", bundle: nil)
+        navigationController?.pushViewController(controller, animated: true)
+        println("oi")
+        
     }
-
+    
+    //func esse espaco já tem preenchido?
+    
+    func isDataAvailable (doctor: Doctor)
+    {
+        //que espacos seram verificados? - cpf e crm em doctor!
+        
+        var query = PFQuery(className: "Doctor")
+        query.whereKey("CRM", equalTo: doctor.crm)
+        query.whereKey("CPF", equalTo: doctor.cpf)
+        
+        //em findobjectsinbackgroundwithblock, verificar antes de salvar se o pedido pode ser enviado!
+        query.findObjectsInBackgroundWithBlock { (vector: [AnyObject]?, error: NSError?) -> Void in
+            
+            //condicional
+            if (vector?.count > 0)
+            {
+                println("User already exists.")
+            } else {
+                //vou criar um UIAlert
+                println("User created.")
+                self.testeDoctor()
+            }
+            
+            
+        }
+    }
+    
+    func testeDoctor() {
+        
+        let doctor = PFObject(className: "Doctor")
+        
+        doctor["FullName"] = doctorModel.fullName
+        doctor["CRM"] = doctorModel.crm
+        doctor["CPF"] = doctorModel.cpf
+        doctor["Speciality"] = doctorModel.speaciality
+        doctor["Email"] = doctorModel.email
+        doctor["OfficeTelephone"] = doctorModel.officeTelephone
+        doctor["EmergencyTelephone"] = doctorModel.emergencyTelephone
+        
+        doctor.saveInBackgroundWithBlock {(sucess:Bool, error: NSError?) -> Void in
+            print("Block Saved")
+        }
+    }
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-//        doctorModel = Doctor(fullname: "Carolina Mandia", crm: 321362, cpf: 666666, speciality: "Neurologista", email: "carolbolada@outlook.com", officeTelephone: 123123212, emergencyTelephone: 23123231, password: "BLABLA878788776")
         
+        
+        doctorModel = Doctor()
+        
+        //um usuario pro teste
+        doctorModel.fullName = "Carolina Mandia"
+        doctorModel.crm = 321362
+        doctorModel.cpf = 666666
+        doctorModel.speaciality = "Neurologista"
+        doctorModel.email = "carolbolada@outlook.com"
+        doctorModel.officeTelephone = 23123231
+        doctorModel.emergencyTelephone =  921212121
     
-
         
-//        //um usuario pro teste
-//        doctorModel.fullName = "Carolina Mandia"
-//        doctorModel.crm = 321362
-//        doctorModel.cpf = 666666
-//        doctorModel.speaciality = "Neurologista"
-//        doctorModel.email = "carolbolada@outlook.com"
-//        doctorModel.officeTelephone = 23123231
-//        doctorModel.emergencyTelephone =  921212121
-//        doctorModel.password = "BLABLA878788776"
-//    
-//        
-//        isDataAvailable(doctorModel)
+        isDataAvailable(doctorModel)
         
 
 //        let request = PFObject(className: "Request")

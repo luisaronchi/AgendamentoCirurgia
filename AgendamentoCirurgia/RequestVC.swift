@@ -7,66 +7,179 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class RequestVC: UIViewController, UITextFieldDelegate {
-    
-    @IBOutlet weak var nameField: UITextField!
-    
-    @IBOutlet weak var birthField: UITextField!
 
+class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
+{
+    var newMedia: Bool?
+    
+    @IBOutlet weak var dateTextField: UITextField!
+    
     @IBOutlet weak var insuranceField: UITextField!
+    
+    @IBOutlet weak var genderField: UITextField!
     
     @IBOutlet weak var nameDoctorField: UITextField!
     
     @IBOutlet weak var phoneField: UITextField!
-
+    
     @IBOutlet weak var surgeryTypeField: UITextField!
     
-    @IBOutlet weak var surgeryDateField: UITextField!
+    @IBOutlet weak var SurgeryDate: UITextField!
+    
+    @IBOutlet weak var nameField: UITextField!
     
     @IBOutlet weak var materialField: UITextField!
     
     @IBOutlet weak var observationField: UITextField!
     
-    var dt : NSDate = NSDate()
-
-    @IBAction func textFieldEditing(sender: UITextField) {
-        var datePickerView: UIDatePicker = UIDatePicker()
-        datePickerView.datePickerMode = UIDatePickerMode.Date
-        sender.inputView = datePickerView
-        datePickerView.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
-    }
+    var id = 1;
     
-    func datePickerValueChanged(sender: UIDatePicker) {
-        var dateformatter = NSDateFormatter()
-        dateformatter.dateStyle = NSDateFormatterStyle.MediumStyle
-        birthField.text = dateformatter.stringFromDate(sender.date)
-        
-        dt = sender.date
-    }
-
-    
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
-        var data: NSDate = NSDate()
-        
-        birthField.delegate = self
-
-    }
-
-    }
-
-func didReceiveMemoryWarning()
+        //navigationbar setup
     
-{
-   didReceiveMemoryWarning()
+        self.navigationItem.title = "Requerimento de cirurgia"
+        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
+        
+        //
+        dateTextField.delegate = self
+        SurgeryDate.delegate = self
+        
+        let tap = UITapGestureRecognizer(target: self, action: "didTapView")
+        view.addGestureRecognizer(tap)
+    }
+    
+    @IBAction func buttonclicked(sender: UIBarButtonItem) {
+       
+        println("xd")
+        let alertController = UIAlertController(title: "Requerimento Enviado!", message:
+            "Adicionado ao feed", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    func didTapView () {
+        view.endEditing(true)
+    }
+    
+    var birthDatePicker: UIDatePicker!
+    
+    var sugeryDatePicker: UIDatePicker!
+    
+    @IBAction func TextFieldEditing(sender: UITextField)
+    {
+        var birthDatePicker:UIDatePicker = UIDatePicker()
+        
+        birthDatePicker.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = birthDatePicker
+        
+        birthDatePicker.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+  
+    @IBAction func SurgeryDatePicker(sender: UITextField)
+    {
+        var sugeryDatePicker:UIDatePicker = UIDatePicker()
+        
+        sugeryDatePicker.datePickerMode = UIDatePickerMode.Date
+        
+        sender.inputView = sugeryDatePicker
+        
+        sugeryDatePicker.addTarget(self, action: Selector("datePickerValueChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    @IBAction func useCameraRoll(sender: AnyObject) {
+        
+        
+        if UIImagePickerController.isSourceTypeAvailable(
+            UIImagePickerControllerSourceType.SavedPhotosAlbum) {
+                let imagePicker = UIImagePickerController()
+                
+                imagePicker.delegate = self
+                imagePicker.sourceType =
+                    UIImagePickerControllerSourceType.PhotoLibrary
+                imagePicker.mediaTypes = [kUTTypeImage as NSString]
+                imagePicker.allowsEditing = false
+                self.presentViewController(imagePicker, animated: true,
+                    completion: nil)
+                newMedia = false
+        }
+    }
+
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [NSObject : AnyObject]) {
+        
+        let mediaType = info[UIImagePickerControllerMediaType] as! NSString
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        if mediaType.isEqualToString(kUTTypeImage as NSString as String) {
+            let image = info[UIImagePickerControllerOriginalImage]
+                as! UIImage
+            
+//            imageView.image = image
+            
+            if (newMedia == true) {
+                UIImageWriteToSavedPhotosAlbum(image, self,
+                    "image:didFinishSavingWithError:contextInfo:", nil)
+            } else if mediaType.isEqualToString(kUTTypeMovie as! String) {
+                // Code to support video here
+            }
+            
+        }
+    }
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        if(textField == self.dateTextField)
+        {
+            self.id = 1
+        }
+        else
+        {
+            self.id = 2
+        }
+    }
+    
+    func datePickerValueChanged(sender:UIDatePicker)
+    {
+        if(self.id == 1)
+        {
+        
+            var dateFormatter = NSDateFormatter()
+            
+            dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+            
+            dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+            
+            dateTextField.text = dateFormatter.stringFromDate(sender.date)
+        }
+        else
+        {
+            var dateFormatter = NSDateFormatter()
+            
+            dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+            
+            dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+            
+            SurgeryDate.text = dateFormatter.stringFromDate(sender.date)
+        }
+        
+    }
+ 
+//    
+//    func datePickerValueChanged(sender:UIDatePicker)
+//    {
+//        var dateFormatter = NSDateFormatter()
+//        
+//        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+//        
+//        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+//        
+//        SurgeryDate.text = dateFormatter.stringFromDate(sender.date)
+//            
+//    }
 }
-
-
-
-
-
-
-
-
