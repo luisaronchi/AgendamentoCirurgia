@@ -12,10 +12,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBAction func NewRequest(sender: UIButton) {
         
-        let controller = RequestVC(nibName: "RequestVC", bundle: nil)
-        navigationController?.pushViewController(controller, animated: true)
-        println("oi")
+        var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
+        self.presentViewController(requestVC, animated: true, completion:nil)
     }
+    
+    
     
     @IBOutlet weak var tableFeed: UITableView!
     

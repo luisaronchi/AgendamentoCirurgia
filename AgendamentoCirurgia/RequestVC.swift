@@ -170,16 +170,5 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         
     }
  
-//    
-//    func datePickerValueChanged(sender:UIDatePicker)
-//    {
-//        var dateFormatter = NSDateFormatter()
-//        
-//        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
-//        
-//        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
-//        
-//        SurgeryDate.text = dateFormatter.stringFromDate(sender.date)
-//            
-//    }
+
 }
