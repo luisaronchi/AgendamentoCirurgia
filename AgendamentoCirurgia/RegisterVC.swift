@@ -24,21 +24,57 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var speciality: UITextField!
     
-    @IBAction func signUpAction(sender: UIButton) {
+    @IBAction func signUpAction(sender: UIButton) {if (nameField.text.isEmpty  || crmField.text.isEmpty || emailField.text.isEmpty || passwordField.text.isEmpty || phoneField.text.isEmpty) {
+        
+        var alertView:UIAlertView = UIAlertView()
+        alertView.title = "Erro"
+        alertView.message = "Precisamos de todos os campos preenchidos"
+        alertView.delegate = self
+        alertView.addButtonWithTitle("Ok")
+        alertView.show()
+        
+    } else {
+        
+        DoctorDAO.addUser(self.nameField.text ,password: self.passwordField.text , email: self.emailField.text,crm: self.crmField.text.toInt()!, phone: self.phoneField.text.toInt()!, callback : { (error : Bool, desc : String) in
+            
+            var alertView:UIAlertView = UIAlertView()
+            
+            if (error){
+                alertView.title = "Nao foi possivel completar o registro"
+                alertView.message = desc
+                alertView.delegate = self
+                alertView.addButtonWithTitle("Ok")
+                
+                alertView.show()
+                
+            } else {
+                alertView.title = "Nao foi possivel completar o registro"
+                alertView.message = desc
+                alertView.delegate = self
+                alertView.addButtonWithTitle("Ok")
+                
+                alertView.show()
+                
+                var loginViewController = LoginVC(nibName: "LoginVC", bundle: nil)
+                self.presentViewController(loginViewController, animated: true, completion: nil)
+                
+            }
+            
+            
+        })
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //navigationbar setup
-         self.navigationItem.title = "Cadastro"
-
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+        
     }
-
-
+    
+    
 }
