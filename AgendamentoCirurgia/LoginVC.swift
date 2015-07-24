@@ -11,7 +11,7 @@ import Parse
 import Bolts
 import Foundation
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
     
     var doctorModel: Doctor!
 
@@ -33,8 +33,12 @@ class LoginVC: UIViewController {
                     
                     DoctorDAO.setCurrentUser(self.emailField.text, password: self.passwordField.text)
                     
-                    var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
-                    self.presentViewController(controller, animated: true, completion: nil)
+                    
+//                    var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
+//                    self.presentViewController(controller, animated: true, completion: nil)
+                    
+                    let vc = FeedVC(nibName: "FeedVC", bundle: nil)
+                    self.navigationController?.pushViewController(vc, animated: true)
                     
                 } else {
                     var alertView:UIAlertView = UIAlertView()
@@ -70,8 +74,11 @@ class LoginVC: UIViewController {
     {
         // REGISTRO
         
-        var registerVC = RegisterVC(nibName: "RegisterVC", bundle: nil)
-        self.presentViewController(registerVC, animated: true, completion: nil)
+//        var registerVC = RegisterVC(nibName: "RegisterVC", bundle: nil)
+//        self.presentViewController(registerVC, animated: true, completion: nil)
+        
+        let vc = RegisterVC(nibName: "RegisterVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
         
     }
     
@@ -82,12 +89,31 @@ class LoginVC: UIViewController {
     {
         super.viewDidLoad()
         
+        //logout provisório
+        let backItem = UIBarButtonItem(title: "Logout", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
         
         
-
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBarHidden = true
+        
+        emailField.text = ""
+        passwordField.text = ""
         
     }
 
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.navigationController?.navigationBarHidden = false
+        
+    }
+    
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()

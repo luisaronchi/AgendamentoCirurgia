@@ -55,8 +55,11 @@ class RegisterVC: UIViewController {
                 
                 alertView.show()
                 
-                var loginViewController = LoginVC(nibName: "LoginVC", bundle: nil)
-                self.presentViewController(loginViewController, animated: true, completion: nil)
+//                var loginViewController = LoginVC(nibName: "LoginVC", bundle: nil)
+//                self.presentViewController(loginViewController, animated: true, completion: nil)
+
+                let vc = LoginVC(nibName: "LoginVC", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
                 
             }
             

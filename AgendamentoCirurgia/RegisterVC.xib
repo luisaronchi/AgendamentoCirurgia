@@ -35,7 +35,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS CADASTRAIS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaV-p5-cff">
-                    <rect key="frame" x="16" y="134" width="584" height="12"/>
+                    <rect key="frame" x="16" y="140" width="584" height="12"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="12" id="aYm-vV-USh"/>
                     </constraints>
@@ -44,14 +44,14 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oc4-H8-ILy" userLabel="GambiarraViewNome">
-                    <rect key="frame" x="0.0" y="154" width="600" height="40"/>
+                    <rect key="frame" x="0.0" y="160" width="600" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="9zj-HT-d3T"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome Completo" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SYJ-jl-Anp">
-                    <rect key="frame" x="16" y="154" width="584" height="40"/>
+                    <rect key="frame" x="16" y="160" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980392156867" green="0.84705882352941175" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="d1e-VF-5aW"/>
@@ -60,14 +60,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu3-7b-qlN" userLabel="GambiarraViewCRM">
-                    <rect key="frame" x="0.0" y="195" width="600" height="40"/>
+                    <rect key="frame" x="0.0" y="201" width="600" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="LdO-L6-VDq"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CRM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxY-M4-ENv">
-                    <rect key="frame" x="16" y="195" width="584" height="40"/>
+                    <rect key="frame" x="16" y="201" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="tiA-ID-2ky"/>
@@ -76,14 +76,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9U-Q8-qGJ" userLabel="GambiarraViewEmail">
-                    <rect key="frame" x="0.0" y="236" width="600" height="40"/>
+                    <rect key="frame" x="0.0" y="242" width="600" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="YBU-Yc-4sh"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFa-Pf-cHc">
-                    <rect key="frame" x="16" y="236" width="584" height="40"/>
+                    <rect key="frame" x="16" y="242" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="D4x-D6-9OB"/>
@@ -92,14 +92,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2i-hi-lRX" userLabel="GambiarraViewSenha">
-                    <rect key="frame" x="0.0" y="277" width="600" height="40"/>
+                    <rect key="frame" x="0.0" y="283" width="600" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="jOj-81-aBl"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRw-9h-O0O">
-                    <rect key="frame" x="16" y="277" width="584" height="40"/>
+                    <rect key="frame" x="16" y="283" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="DtI-te-76u"/>
@@ -108,14 +108,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1U-uE-TgC" userLabel="GambiarraViewTelefone">
-                    <rect key="frame" x="0.0" y="318" width="600" height="40"/>
+                    <rect key="frame" x="0.0" y="324" width="600" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Z9l-8A-pwj"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone Consultório" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AGr-wz-ggd">
-                    <rect key="frame" x="16" y="318" width="584" height="40"/>
+                    <rect key="frame" x="16" y="324" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="UGU-Mp-sLM"/>
@@ -124,14 +124,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI7-bL-dfC" userLabel="GambiarraViewTelefone">
-                    <rect key="frame" x="0.0" y="359" width="600" height="40"/>
+                    <rect key="frame" x="0.0" y="365" width="600" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gV7-zh-wfN"/>
                     </constraints>
                 </view>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone Emergencial" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1W-cW-Wcg">
-                    <rect key="frame" x="16" y="359" width="584" height="40"/>
+                    <rect key="frame" x="16" y="365" width="584" height="40"/>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="gpt-wp-ugm"/>
@@ -139,8 +139,8 @@
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-lH-FjT">
-                    <rect key="frame" x="0.0" y="451" width="600" height="36"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-lH-FjT">
+                    <rect key="frame" x="0.0" y="457" width="600" height="36"/>
                     <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="9Gb-5k-Noi"/>
@@ -154,10 +154,10 @@
                         <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="qcF-dR-Vhf"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qZ-s7-aNo" userLabel="GambiarraViewTelefone">
-                    <rect key="frame" x="0.0" y="400" width="600" height="40"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qZ-s7-aNo" userLabel="GambiarraViewTelefone">
+                    <rect key="frame" x="0.0" y="406" width="600" height="40"/>
                     <subviews>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Especialidade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-2L-n6X">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Especialidade" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eM5-2L-n6X">
                             <rect key="frame" x="16" y="0.0" width="584" height="40"/>
                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -169,6 +169,9 @@
                     </subviews>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="eM5-2L-n6X" secondAttribute="trailing" id="5NL-H0-lOc"/>
+                        <constraint firstAttribute="height" secondItem="eM5-2L-n6X" secondAttribute="height" id="KWQ-vX-uHO"/>
+                        <constraint firstItem="eM5-2L-n6X" firstAttribute="leading" secondItem="2qZ-s7-aNo" secondAttribute="leading" constant="16" id="Wi2-4h-yzW"/>
                         <constraint firstAttribute="height" constant="40" id="yBy-GJ-34d"/>
                     </constraints>
                 </view>
@@ -176,13 +179,16 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="TkZ-lH-FjT" firstAttribute="top" secondItem="qI7-bL-dfC" secondAttribute="bottom" constant="1" id="0s1-6u-f0w"/>
+                <constraint firstItem="eM5-2L-n6X" firstAttribute="top" secondItem="N1W-cW-Wcg" secondAttribute="bottom" constant="1" id="0vt-8h-Oof"/>
+                <constraint firstAttribute="trailing" secondItem="2qZ-s7-aNo" secondAttribute="trailing" id="3M7-D1-alQ"/>
                 <constraint firstItem="SYJ-jl-Anp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="48i-3M-yHX"/>
                 <constraint firstItem="Oc4-H8-ILy" firstAttribute="top" secondItem="EaV-p5-cff" secondAttribute="bottom" constant="8" id="6Bi-E9-uJI"/>
-                <constraint firstItem="EaV-p5-cff" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="134" id="8XW-Zr-Gii"/>
+                <constraint firstItem="EaV-p5-cff" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="140" id="8XW-Zr-Gii"/>
                 <constraint firstItem="fxY-M4-ENv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9Ok-QN-MRi"/>
                 <constraint firstAttribute="trailing" secondItem="A1U-uE-TgC" secondAttribute="trailing" id="9uG-1T-Iu7"/>
                 <constraint firstItem="N1W-cW-Wcg" firstAttribute="top" secondItem="AGr-wz-ggd" secondAttribute="bottom" constant="1" id="AMX-Cz-bc7"/>
                 <constraint firstItem="Yu3-7b-qlN" firstAttribute="top" secondItem="SYJ-jl-Anp" secondAttribute="bottom" constant="1" id="ARx-tZ-lPg"/>
+                <constraint firstItem="2qZ-s7-aNo" firstAttribute="top" secondItem="qI7-bL-dfC" secondAttribute="bottom" constant="1" id="Aqk-LG-mTn"/>
                 <constraint firstItem="qI7-bL-dfC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Daj-Ih-Za0"/>
                 <constraint firstAttribute="trailing" secondItem="Oc4-H8-ILy" secondAttribute="trailing" id="ECf-zS-RlR"/>
                 <constraint firstAttribute="trailing" secondItem="TkZ-lH-FjT" secondAttribute="trailing" id="F5e-1H-f3r"/>
@@ -203,12 +209,14 @@
                 <constraint firstItem="F9U-Q8-qGJ" firstAttribute="top" secondItem="fxY-M4-ENv" secondAttribute="bottom" constant="1" id="ZxG-eT-3nk"/>
                 <constraint firstItem="A1U-uE-TgC" firstAttribute="top" secondItem="HRw-9h-O0O" secondAttribute="bottom" constant="1" id="aHq-D7-zBg"/>
                 <constraint firstAttribute="trailing" secondItem="HRw-9h-O0O" secondAttribute="trailing" id="bym-fi-4Uu"/>
+                <constraint firstItem="2qZ-s7-aNo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cb3-8c-VMB"/>
                 <constraint firstItem="qI7-bL-dfC" firstAttribute="top" secondItem="A1U-uE-TgC" secondAttribute="bottom" constant="1" id="dH0-cH-xZA"/>
                 <constraint firstItem="d2i-hi-lRX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dOV-3O-UBk"/>
                 <constraint firstAttribute="trailing" secondItem="EaV-p5-cff" secondAttribute="trailing" id="dOa-1X-Pyz"/>
                 <constraint firstAttribute="trailing" secondItem="N1W-cW-Wcg" secondAttribute="trailing" id="ek6-2J-bGr"/>
                 <constraint firstItem="HRw-9h-O0O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="gTc-xj-qPW"/>
                 <constraint firstItem="TkZ-lH-FjT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gn0-9b-VFP"/>
+                <constraint firstItem="TkZ-lH-FjT" firstAttribute="top" secondItem="eM5-2L-n6X" secondAttribute="bottom" constant="11" id="k5X-ZY-2z2"/>
                 <constraint firstItem="iFa-Pf-cHc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="lyF-cD-wgJ"/>
                 <constraint firstItem="AGr-wz-ggd" firstAttribute="top" secondItem="HRw-9h-O0O" secondAttribute="bottom" constant="1" id="ncY-Zs-fPz"/>
                 <constraint firstAttribute="trailing" secondItem="Yu3-7b-qlN" secondAttribute="trailing" id="ovr-1K-T1o"/>
@@ -221,6 +229,7 @@
             </constraints>
             <variation key="default">
                 <mask key="constraints">
+                    <exclude reference="0s1-6u-f0w"/>
                     <exclude reference="FW0-Uo-udi"/>
                 </mask>
             </variation>

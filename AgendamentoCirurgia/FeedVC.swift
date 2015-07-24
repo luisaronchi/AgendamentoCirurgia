@@ -12,8 +12,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBAction func NewRequest(sender: UIButton) {
         
-        var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
-        self.presentViewController(requestVC, animated: true, completion:nil)
+//        var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
+//        self.presentViewController(requestVC, animated: true, completion:nil)
+        
+        let vc = RequestVC(nibName: "RequestVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -21,6 +24,19 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableFeed: UITableView!
     
     @IBOutlet weak var segment: UISegmentedControl!
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        
+        //logout provisório
+        //let backItem = UIBarButtonItem(title: "Logout", style: .Plain, target: nil, action: nil)
+        //navigationItem.backBarButtonItem = backItem
+        
+        //self.navigationItem.hidesBackButton = true;
+
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return requestList.count

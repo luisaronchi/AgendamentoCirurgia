@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-Hp-HB3">
-                    <rect key="frame" x="0.0" y="148" width="584" height="452"/>
+                    <rect key="frame" x="0.0" y="208" width="584" height="392"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Sre-64-bTO"/>
@@ -25,7 +25,7 @@
                     </connections>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-LQ-rmK">
-                    <rect key="frame" x="50" y="80" width="500" height="29"/>
+                    <rect key="frame" x="50" y="140" width="500" height="29"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="500" id="gRC-rv-bYi"/>
                     </constraints>
@@ -37,7 +37,7 @@
                     <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </segmentedControl>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcR-Sf-c6i">
-                    <rect key="frame" x="565" y="68" width="35" height="51"/>
+                    <rect key="frame" x="565" y="128" width="35" height="51"/>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
                     <state key="normal" title="+">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,7 +50,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Kg1-Hp-HB3" secondAttribute="bottom" id="0x2-O6-sEL"/>
-                <constraint firstItem="FYb-LQ-rmK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="71x-vH-n5r"/>
+                <constraint firstItem="FYb-LQ-rmK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="140" id="71x-vH-n5r"/>
                 <constraint firstItem="Kg1-Hp-HB3" firstAttribute="top" secondItem="FYb-LQ-rmK" secondAttribute="bottom" constant="40" id="UJP-Bo-7ad"/>
                 <constraint firstItem="FYb-LQ-rmK" firstAttribute="centerY" secondItem="EcR-Sf-c6i" secondAttribute="centerY" constant="1" id="V7U-QQ-X8n"/>
                 <constraint firstItem="Kg1-Hp-HB3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bDb-oo-BGw"/>
