@@ -110,12 +110,13 @@ class DoctorDAO: NSObject {
                     let fullName = userDict["FullName"] as! String
                     let email = userDict["Email"] as! String
                     let crm = userDict["CRM"] as! Int
-                    //                        let speciality = userDict["Speciality"] as! String
+                    let speciality = userDict["Speciality"] as! String
                     let phone = userDict["OfficeTelephone"] as! Int
+                    let emergPhone = userDict["EmergencyTelephone"] as! Int
                     let password = userDict["password"] as! String
                     
                     
-                    var doctor: Doctor = Doctor (fullname: fullName, crm: crm, cpf: Int(), speciality: String(), email: email, officeTelephone: phone, emergencyTelephone: Int(), password: password)
+                    var doctor: Doctor = Doctor (fullname: fullName, crm: crm, cpf: Int(), speciality: speciality, email: email, officeTelephone: phone, emergencyTelephone: emergPhone, password: password)
                     
                     callback(doctor)
                     
@@ -144,7 +145,7 @@ class DoctorDAO: NSObject {
     
     // FALTA ADICIONAR O RESTO DO CADASTRO DO MEDICO
     
-    class func addUser(fullName: String, password: String, email: String, crm: Int, phone: Int, callback: (error: Bool, desc: String) -> Void) -> Void {
+    class func addUser(fullName: String, password: String, email: String, crm: Int, phone: Int, speciality: String, emergPhone: Int, callback: (error: Bool, desc: String) -> Void) -> Void {
         
         var search: Doctor?
         
@@ -165,6 +166,8 @@ class DoctorDAO: NSObject {
                     newDoctor.setObject(password, forKey: "password")
                     newDoctor.setObject(crm, forKey: "CRM")
                     newDoctor.setObject(phone, forKey: "OfficeTelephone")
+                    newDoctor.setObject(speciality, forKey: "Speciality")
+                    newDoctor.setObject(emergPhone, forKey: "EmergencyTelephone")
                     
                     newDoctor.saveInBackgroundWithBlock {
                         (success: Bool, error: NSError?) -> Void in
