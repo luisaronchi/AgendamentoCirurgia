@@ -8,12 +8,12 @@
 
 import UIKit
 
-class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBAction func NewRequest(sender: UIButton) {
         
-//        var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
-//        self.presentViewController(requestVC, animated: true, completion:nil)
+        //var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
+        //self.presentViewController(requestVC, animated: true, completion:nil)
         
         let vc = RequestVC(nibName: "RequestVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
@@ -29,6 +29,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     {
         super.viewDidLoad()
         
+        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "+",style: .Plain, target: self, action: "NewRequest:"), animated: true)
         
         //logout provisório
         //let backItem = UIBarButtonItem(title: "Logout", style: .Plain, target: nil, action: nil)
@@ -38,14 +39,19 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return requestList.count
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return (tableView == searchDisplayController?.searchResultsTableView) ?  filteredRequestList.count : requestList.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let request = (tableView == searchDisplayController?.searchResultsTableView) ?  filteredRequestList[indexPath.row] : requestList[indexPath.row]
         
         // Request que eu devo usar para preencher a célula
-        let request = requestList[indexPath.row]
+//        let request = requestList[indexPath.row]
         
         let cellIdentifier = "requestCell"
         
@@ -57,15 +63,32 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         // TODO: Preencher informações
         
-        cell.textLabel?.text = request.doctorName
+        // Isso é o certo
+        // cell.textLabel?.text = request.doctorName
+        
+        cell.textLabel?.text = request
         
         return cell
+    }
+
+
+    func searchBar (searchBar: UISearchBar, textDidChange searchText: String)
+    {
+        println("Entrei aqui")
+        filteredRequestList = requestList.filter { (name: String) -> Bool in
+            let stringMatch = name.capitalizedString.rangeOfString(searchText.capitalizedString)
+            return stringMatch != nil
+        }
     }
 }
 
 
 // Gambiarra temporária
-var requestList: [Request] = [Request]()
+//var requestList: [Request] = [Request]()
+
+var filteredRequestList = [String]()
+
+var requestList = ["Renan", "Alena", "Gustavo", "Carol", "Adriano"]
 
 // (var ou let) variableName: VariableType
 
