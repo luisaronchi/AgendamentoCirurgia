@@ -33,6 +33,7 @@
                 <outlet property="materialField" destination="c6p-IP-ozS" id="GL2-99-dN1"/>
                 <outlet property="nameDoctorField" destination="MYO-72-9js" id="HI5-EW-nl0"/>
                 <outlet property="nameField" destination="rJj-93-FX9" id="WTd-8d-W61"/>
+                <outlet property="nameSecretaryField" destination="VtC-hF-IKD" id="8Lm-1w-aGx"/>
                 <outlet property="observationField" destination="SOy-9K-cAY" id="zeW-gC-Fn8"/>
                 <outlet property="phoneField" destination="AIR-4x-xoY" id="8P8-mz-B1k"/>
                 <outlet property="surgeryTypeField" destination="iaA-4g-p5H" id="yt0-N6-Rgz"/>
@@ -290,7 +291,7 @@
                                             <rect key="frame" x="0.0" y="465" width="600" height="40"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome da Secretária" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VtC-hF-IKD">
-                                                    <rect key="frame" x="8" y="0.0" width="584" height="40"/>
+                                                    <rect key="frame" x="16" y="0.0" width="584" height="40"/>
                                                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -299,8 +300,8 @@
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" secondItem="VtC-hF-IKD" secondAttribute="height" id="0uF-fI-IN5"/>
-                                                <constraint firstAttribute="trailing" secondItem="VtC-hF-IKD" secondAttribute="trailing" constant="8" id="Krh-ur-oU8"/>
-                                                <constraint firstItem="VtC-hF-IKD" firstAttribute="leading" secondItem="DDh-Q8-rmZ" secondAttribute="leading" constant="8" id="U0I-He-JCo"/>
+                                                <constraint firstAttribute="trailing" secondItem="VtC-hF-IKD" secondAttribute="trailing" id="Krh-ur-oU8"/>
+                                                <constraint firstItem="VtC-hF-IKD" firstAttribute="leading" secondItem="DDh-Q8-rmZ" secondAttribute="leading" constant="16" id="U0I-He-JCo"/>
                                                 <constraint firstAttribute="width" constant="600" id="rkK-x5-FNN"/>
                                                 <constraint firstAttribute="height" constant="40" id="srN-1I-BNz"/>
                                             </constraints>
@@ -425,12 +426,41 @@
                                 <constraint firstAttribute="bottom" secondItem="hu0-9A-EPJ" secondAttribute="bottom" id="nDj-1p-mp4"/>
                             </constraints>
                         </scrollView>
+                        <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23I-oJ-Wfg">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="pX3-uQ-7A6"/>
+                            </constraints>
+                            <color key="barTintColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <textAttributes key="titleTextAttributes">
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </textAttributes>
+                            <items>
+                                <navigationItem title="Requerimento" id="UdG-uK-CDF">
+                                    <barButtonItem key="leftBarButtonItem" title="Cancelar" id="vSU-Ss-vh4">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="-1" id="9Pj-1z-6PL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="OK" id="LdU-MR-Fv2">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="buttonclicked:" destination="-1" id="O58-Rd-NEE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="Y5A-St-U8a" secondAttribute="bottom" id="2lw-qA-4Od"/>
+                        <constraint firstItem="23I-oJ-Wfg" firstAttribute="leading" secondItem="2dr-AV-EAG" secondAttribute="leading" id="EjS-hb-voP"/>
                         <constraint firstItem="Y5A-St-U8a" firstAttribute="leading" secondItem="2dr-AV-EAG" secondAttribute="leading" id="F3e-Vr-WZH"/>
                         <constraint firstItem="hu0-9A-EPJ" firstAttribute="width" secondItem="2dr-AV-EAG" secondAttribute="width" id="MUc-Jj-9fL"/>
+                        <constraint firstAttribute="trailing" secondItem="23I-oJ-Wfg" secondAttribute="trailing" id="ROT-sx-uzD"/>
+                        <constraint firstItem="23I-oJ-Wfg" firstAttribute="top" secondItem="2dr-AV-EAG" secondAttribute="top" id="Zax-vg-pYq"/>
                         <constraint firstItem="Y5A-St-U8a" firstAttribute="top" secondItem="2dr-AV-EAG" secondAttribute="top" id="wD8-rO-G3D"/>
                         <constraint firstAttribute="trailing" secondItem="Y5A-St-U8a" secondAttribute="trailing" id="yhD-qW-hov"/>
                     </constraints>

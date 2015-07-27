@@ -28,14 +28,17 @@ class RequestSumaryVC: UIViewController {
     
     @IBOutlet weak var observationLabel: UILabel!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Detalhes do pedido"
 
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-
     }
 
 }

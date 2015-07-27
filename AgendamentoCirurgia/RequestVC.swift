@@ -34,16 +34,18 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBOutlet weak var observationField: UITextField!
     
+    @IBOutlet weak var nameSecretaryField: UITextField!
+    
     var id = 1;
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        //navigationbar setup
-    
-        self.navigationItem.title = "Requerimento de cirurgia"
-        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
+//        //navigationbar setup
+//    
+//        self.navigationItem.title = "Requerimento de cirurgia"
+//        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
         
         //
         dateTextField.delegate = self
@@ -53,15 +55,32 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         view.addGestureRecognizer(tap)
     }
     
-    @IBAction func buttonclicked(sender: UIBarButtonItem) {
-       
-        println("xd")
-        let alertController = UIAlertController(title: "Requerimento Enviado!", message:
-            "Adicionado ao feed", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "ok", style: UIAlertActionStyle.Default,handler: nil))
+    @IBAction func buttonclicked(sender: UIBarButtonItem)
+    {
+        if (nameField.text.isEmpty != false || dateTextField.text.isEmpty != false || insuranceField.text.isEmpty != false || genderField.text.isEmpty != false || nameDoctorField.text.isEmpty != false || phoneField.text.isEmpty != false || nameSecretaryField.text.isEmpty != false || surgeryTypeField.text.isEmpty != false || SurgeryDate.text.isEmpty != false || materialField.text.isEmpty != false || observationField.text.isEmpty != false)
+        {
+        var alertView:UIAlertView = UIAlertView()
+
+        alertView.title = "Nao foi possivel completar o registro"
+        alertView.message = "É necessário preencher todos os campos"
+        alertView.delegate = self
+        alertView.addButtonWithTitle("Ok")
         
-        self.presentViewController(alertController, animated: true, completion: nil)
+        alertView.show()
+        }
+        
+        else
+        {
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
     }
+    
+    @IBAction func cancelButton(sender: AnyObject)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
 
     func didTapView () {
         view.endEditing(true)

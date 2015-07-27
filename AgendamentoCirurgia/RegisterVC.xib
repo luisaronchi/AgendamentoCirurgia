@@ -14,6 +14,7 @@
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
             <string>MyriadPro-Regular</string>
+            <string>MyriadPro-Regular</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -25,6 +26,7 @@
                 <outlet property="nameField" destination="SYJ-jl-Anp" id="5On-fe-q7d"/>
                 <outlet property="passwordField" destination="HRw-9h-O0O" id="ro7-Cr-gXs"/>
                 <outlet property="phoneField" destination="AGr-wz-ggd" id="NRx-mK-m1Q"/>
+                <outlet property="secretaryName" destination="QO2-TW-rKk" id="5VL-Ek-7w6"/>
                 <outlet property="speciality" destination="eM5-2L-n6X" id="LNP-9C-GaY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -139,21 +141,6 @@
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-lH-FjT">
-                    <rect key="frame" x="0.0" y="457" width="600" height="36"/>
-                    <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="36" id="9Gb-5k-Noi"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
-                    <state key="normal" title="Cadastrar-se">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="qcF-dR-Vhf"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qZ-s7-aNo" userLabel="GambiarraViewTelefone">
                     <rect key="frame" x="0.0" y="406" width="600" height="40"/>
                     <subviews>
@@ -175,6 +162,43 @@
                         <constraint firstAttribute="height" constant="40" id="yBy-GJ-34d"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Gw-wI-j6m" userLabel="GambiarraViewSecretaria">
+                    <rect key="frame" x="0.0" y="447" width="600" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome da secretária" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QO2-TW-rKk" userLabel="Secretaria">
+                            <rect key="frame" x="16" y="0.0" width="584" height="40"/>
+                            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Pph-Sj-bhx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" secondItem="QO2-TW-rKk" secondAttribute="height" id="7hI-5V-3zx"/>
+                        <constraint firstAttribute="centerY" secondItem="QO2-TW-rKk" secondAttribute="centerY" id="A4z-Pc-jPv"/>
+                        <constraint firstAttribute="height" constant="40" id="DTs-VZ-W1k"/>
+                        <constraint firstItem="QO2-TW-rKk" firstAttribute="leading" secondItem="4Gw-wI-j6m" secondAttribute="leading" constant="16" id="YNo-oW-XkR"/>
+                        <constraint firstAttribute="trailing" secondItem="QO2-TW-rKk" secondAttribute="trailing" id="hut-4B-7q5"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-lH-FjT">
+                    <rect key="frame" x="0.0" y="501" width="600" height="36"/>
+                    <color key="backgroundColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="9Gb-5k-Noi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                    <state key="normal" title="Cadastrar-se">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="signUpAction:" destination="-1" eventType="touchUpInside" id="qcF-dR-Vhf"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -199,6 +223,7 @@
                 <constraint firstAttribute="trailing" secondItem="AGr-wz-ggd" secondAttribute="trailing" id="I3x-zN-KC4"/>
                 <constraint firstItem="SYJ-jl-Anp" firstAttribute="top" secondItem="EaV-p5-cff" secondAttribute="bottom" constant="8" id="I49-Ok-EM9"/>
                 <constraint firstItem="AGr-wz-ggd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Kv2-o8-dLW"/>
+                <constraint firstItem="4Gw-wI-j6m" firstAttribute="top" secondItem="2qZ-s7-aNo" secondAttribute="bottom" constant="1" id="LU5-7Z-qKK"/>
                 <constraint firstItem="A1U-uE-TgC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MPq-q2-S23"/>
                 <constraint firstItem="Yu3-7b-qlN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MYV-gd-uRW"/>
                 <constraint firstAttribute="trailing" secondItem="d2i-hi-lRX" secondAttribute="trailing" id="Omh-3J-g0d"/>
@@ -216,16 +241,18 @@
                 <constraint firstAttribute="trailing" secondItem="N1W-cW-Wcg" secondAttribute="trailing" id="ek6-2J-bGr"/>
                 <constraint firstItem="HRw-9h-O0O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="gTc-xj-qPW"/>
                 <constraint firstItem="TkZ-lH-FjT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gn0-9b-VFP"/>
-                <constraint firstItem="TkZ-lH-FjT" firstAttribute="top" secondItem="eM5-2L-n6X" secondAttribute="bottom" constant="11" id="k5X-ZY-2z2"/>
+                <constraint firstItem="TkZ-lH-FjT" firstAttribute="top" secondItem="eM5-2L-n6X" secondAttribute="bottom" constant="55" id="k5X-ZY-2z2"/>
                 <constraint firstItem="iFa-Pf-cHc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="lyF-cD-wgJ"/>
                 <constraint firstItem="AGr-wz-ggd" firstAttribute="top" secondItem="HRw-9h-O0O" secondAttribute="bottom" constant="1" id="ncY-Zs-fPz"/>
                 <constraint firstAttribute="trailing" secondItem="Yu3-7b-qlN" secondAttribute="trailing" id="ovr-1K-T1o"/>
                 <constraint firstAttribute="trailing" secondItem="iFa-Pf-cHc" secondAttribute="trailing" id="qUX-Ti-7lI"/>
                 <constraint firstAttribute="trailing" secondItem="qI7-bL-dfC" secondAttribute="trailing" id="qsB-qI-DEN"/>
                 <constraint firstItem="N1W-cW-Wcg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="rqU-Pb-3bA"/>
+                <constraint firstAttribute="trailing" secondItem="4Gw-wI-j6m" secondAttribute="trailing" id="tUh-Vl-GIP"/>
                 <constraint firstAttribute="trailing" secondItem="F9U-Q8-qGJ" secondAttribute="trailing" id="u1U-JM-n8S"/>
                 <constraint firstItem="F9U-Q8-qGJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="u7m-1t-Pad"/>
                 <constraint firstItem="iFa-Pf-cHc" firstAttribute="top" secondItem="fxY-M4-ENv" secondAttribute="bottom" constant="1" id="vfj-tG-vha"/>
+                <constraint firstItem="4Gw-wI-j6m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vuz-kS-rlF"/>
             </constraints>
             <variation key="default">
                 <mask key="constraints">
