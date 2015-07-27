@@ -14,6 +14,10 @@ import Foundation
 class LoginVC: UIViewController, UITextFieldDelegate {
     
     var doctorModel: Doctor!
+    func textFieldShouldReturn(textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
 
     @IBOutlet weak var emailField: UITextField!
     
@@ -72,6 +76,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         
     }
+    
+
     
     @IBAction func singInButton(sender: UIButton)
     {
