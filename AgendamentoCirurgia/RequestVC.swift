@@ -58,7 +58,7 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBAction func buttonclicked(sender: UIBarButtonItem) {
         
-        RequestDAO.addRequest(self.nameField.text, insurance: self.insuranceField.text, doctorName: self.nameDoctorField.text, doctorTelephone: self.phoneField.text.toInt()!, surgeryType: self.surgeryTypeField.text, patientBirth: self.dateTextField.text, surgeryDate: self.SurgeryDate.text, gender: self.genderField.text, email: emailUser, callback: { (error : Bool, desc : String) in
+        RequestDAO.addRequest(self.nameField.text, insurance: self.insuranceField.text, doctorName: self.nameDoctorField.text, doctorTelephone: self.phoneField.text.toInt()!, nameSecretary: self.nameSecretaryField.text, surgeryType: self.surgeryTypeField.text, patientBirth: self.dateTextField.text, surgeryDate: self.SurgeryDate.text, gender: self.genderField.text, email: emailUser, callback: { (error : Bool, desc : String) in
             
             println("FOIII")
             var alertView:UIAlertView = UIAlertView()

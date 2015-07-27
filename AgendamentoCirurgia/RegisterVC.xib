@@ -24,9 +24,9 @@
                 <outlet property="emailField" destination="iFa-Pf-cHc" id="4uC-aL-u6O"/>
                 <outlet property="emergencyPhoneField" destination="N1W-cW-Wcg" id="drZ-x0-xgV"/>
                 <outlet property="nameField" destination="SYJ-jl-Anp" id="5On-fe-q7d"/>
+                <outlet property="nameSecretaryField" destination="QO2-TW-rKk" id="adb-Of-VPp"/>
                 <outlet property="passwordField" destination="HRw-9h-O0O" id="ro7-Cr-gXs"/>
                 <outlet property="phoneField" destination="AGr-wz-ggd" id="NRx-mK-m1Q"/>
-                <outlet property="secretaryName" destination="QO2-TW-rKk" id="5VL-Ek-7w6"/>
                 <outlet property="speciality" destination="eM5-2L-n6X" id="LNP-9C-GaY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -107,7 +107,7 @@
                         <constraint firstAttribute="height" constant="40" id="DtI-te-76u"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1U-uE-TgC" userLabel="GambiarraViewTelefone">
                     <rect key="frame" x="0.0" y="324" width="600" height="40"/>

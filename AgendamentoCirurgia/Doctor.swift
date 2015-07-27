@@ -18,8 +18,9 @@ class Doctor {
     var officeTelephone: Int?
     var emergencyTelephone: Int?
     var password: String!
+    var nameSecretary: String?
     
-    init (fullname: String, crm: Int, cpf: Int, speciality: String, email: String, officeTelephone: Int, emergencyTelephone: Int, password: String) {
+    init (fullname: String, crm: Int, cpf: Int, speciality: String, email: String, officeTelephone: Int, emergencyTelephone: Int, password: String, nameSecretary: String) {
         
         self.fullName = fullname
         self.crm = crm
@@ -29,6 +30,7 @@ class Doctor {
         self.officeTelephone = officeTelephone
         self.emergencyTelephone = emergencyTelephone
         self.password = password
+        self.nameSecretary = nameSecretary
         
     }
     

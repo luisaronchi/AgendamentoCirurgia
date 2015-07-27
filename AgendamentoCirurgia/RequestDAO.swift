@@ -28,6 +28,7 @@ class RequestDAO {
                     let insurance = userDict["Insurance"] as! String
                     let doctorName = userDict["DoctorName"] as! String
                     let doctorTelephone = userDict["DoctorTelephone"] as! Int
+                    let nameSecretary = userDict["NameSecretary"] as! String
 //                  let doctorApplication = userDict["DoctorApplication"] as! String
                     let patientBirth = userDict["PatientBirth"] as! String
                     let surgeryData = userDict["SurgeryData"] as! String
@@ -36,7 +37,7 @@ class RequestDAO {
                     let email = userDict["Email"] as! String
                     
                 
-                    var request: Request = Request(patientFullName: patientFullName, insurance: insurance, doctorName: doctorName, doctorTelephone: doctorTelephone, surgeryType: surgeryType, patientBirth: patientBirth, surgeryDate: surgeryData, gender: gender, email: email)
+                    var request: Request = Request(patientFullName: patientFullName, insurance: insurance, doctorName: doctorName, doctorTelephone: doctorTelephone, nameSecretary: nameSecretary, surgeryType: surgeryType, patientBirth: patientBirth, surgeryDate: surgeryData, gender: gender, email: email)
                     
                     callback(request)
                     
@@ -56,7 +57,7 @@ class RequestDAO {
 
 
 
-    class func addRequest(patientFullName: String, insurance: String, doctorName: String, doctorTelephone: Int, surgeryType: String, patientBirth: String, surgeryDate: String, gender: String, email: String, callback: (error: Bool, desc: String) -> Void) -> Void {
+    class func addRequest(patientFullName: String, insurance: String, doctorName: String, doctorTelephone: Int, nameSecretary: String, surgeryType: String, patientBirth: String, surgeryDate: String, gender: String, email: String, callback: (error: Bool, desc: String) -> Void) -> Void {
     
     
         var search: Request?
@@ -71,6 +72,7 @@ class RequestDAO {
                 newRequest.setObject(insurance, forKey: "Insurance")
                 newRequest.setObject(doctorName, forKey: "DoctorName")
                 newRequest.setObject(doctorTelephone, forKey: "DoctorTelephone")
+                newRequest.setObject(nameSecretary, forKey: "NameSecretary")
                 newRequest.setObject(surgeryType, forKey: "SurgeryType")
 //                newRequest.setObject(doctorApplication, forKey: "DoctorApplication")
                 newRequest.setObject(patientBirth, forKey: "PatientBirth")
@@ -116,6 +118,7 @@ class RequestDAO {
                     let insurance = userDict["Insurance"] as! String
                     let doctorName = userDict["DoctorName"] as! String
                     let doctorTelephone = userDict["DoctorTelephoe"] as! Int
+                    let nameSecretary = userDict["NameSecretary"] as! String
 //                    let doctorApplication = userDict["DoctorApplication"] as! String
                     let patientBirth = userDict["PatientBirth"] as! String
                     let surgeryData = userDict["SurgeryData"] as! String
@@ -124,7 +127,7 @@ class RequestDAO {
                     let email = userDict["Email"] as! String
                     
                     
-                    var request: Request = Request(patientFullName: patientFullName, insurance: insurance, doctorName: doctorName, doctorTelephone: doctorTelephone, surgeryType: surgeryType, patientBirth: patientBirth, surgeryDate: surgeryData, gender: gender, email: email)
+                    var request: Request = Request(patientFullName: patientFullName, insurance: insurance, doctorName: doctorName, doctorTelephone: doctorTelephone, nameSecretary: nameSecretary, surgeryType: surgeryType, patientBirth: patientBirth, surgeryDate: surgeryData, gender: gender, email: email)
                     
                     callback(request)
                     

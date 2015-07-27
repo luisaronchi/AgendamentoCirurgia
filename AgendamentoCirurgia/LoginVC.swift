@@ -74,11 +74,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func singInButton(sender: UIButton)
     {
-        // REGISTRO
-        
-//        var registerVC = RegisterVC(nibName: "RegisterVC", bundle: nil)
-//        self.presentViewController(registerVC, animated: true, completion: nil)
-        
         let vc = RegisterVC(nibName: "RegisterVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
         
