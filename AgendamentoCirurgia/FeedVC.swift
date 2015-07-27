@@ -12,11 +12,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
 
     @IBAction func NewRequest(sender: UIButton) {
         
-        //var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
-        //self.presentViewController(requestVC, animated: true, completion:nil)
+        var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
+        self.presentViewController(requestVC, animated: true, completion:nil)
         
-        let vc = RequestVC(nibName: "RequestVC", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+        //let vc = RequestVC(nibName: "RequestVC", bundle: nil)
+        //self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -29,6 +29,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
     {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Lista de Agendamentos"
         self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "+",style: .Plain, target: self, action: "NewRequest:"), animated: true)
         
         //logout provisório
@@ -67,7 +68,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
         // cell.textLabel?.text = request.doctorName
         
         cell.textLabel?.text = request
-        
+        cell.textLabel?.font = UIFont (name: "MyriadPro-Regular", size: 16)
         return cell
     }
 
@@ -88,7 +89,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
 
 var filteredRequestList = [String]()
 
-var requestList = ["Renan", "Alena", "Gustavo", "Carol", "Adriano"]
+var requestList = ["Alena Miklos", "Carol Gradel", "Jenifer Emmanuel", "Luisa Ronchi", "Verônica Montezuma", "Renan Almeida", "Gustavo Severo", "Fabio Gois"]
 
 // (var ou let) variableName: VariableType
 

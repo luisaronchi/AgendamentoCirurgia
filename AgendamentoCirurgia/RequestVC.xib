@@ -101,7 +101,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="4s5-BL-RvT"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Convênio" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzB-Zm-56n">
                                             <rect key="frame" x="16" y="242" width="584" height="40"/>
@@ -110,7 +110,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="c02-If-YsV"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nascimento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-dV-QG8">
                                             <rect key="frame" x="16" y="201" width="584" height="40"/>
@@ -119,7 +119,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="kzj-gY-zjl"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                             <connections>
                                                 <action selector="TextFieldEditing:" destination="-1" eventType="editingDidBegin" id="8aa-3H-cVl"/>
                                             </connections>
@@ -140,7 +140,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="MQQ-3g-MQb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Telefone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AIR-4x-xoY">
                                             <rect key="frame" x="16" y="424" width="584" height="40"/>
@@ -149,7 +149,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="UKg-lZ-yf3"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="phonePad" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DADOS PESSOAIS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plw-91-5DZ">
                                             <rect key="frame" x="16" y="140" width="576" height="12"/>
@@ -201,7 +201,7 @@
                                             <rect key="frame" x="16" y="283" width="584" height="40"/>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-h4-jeg" userLabel="GambiarraView">
                                             <rect key="frame" x="0.0" y="681" width="600" height="40"/>
@@ -213,7 +213,7 @@
                                                         <constraint firstAttribute="height" constant="40" id="A0u-Jo-lAU"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -255,7 +255,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="cHs-vY-PQF"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Data Pretendida" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-6x-6KV">
                                             <rect key="frame" x="16" y="599" width="584" height="40"/>
@@ -264,7 +264,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="l1I-dF-pZB"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                             <connections>
                                                 <action selector="SurgeryDatePicker:" destination="-1" eventType="editingDidBegin" id="Qyn-KU-emh"/>
                                             </connections>
@@ -285,7 +285,7 @@
                                                 <constraint firstAttribute="height" constant="40" id="nBa-mM-xaq"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                         </textField>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-Q8-rmZ" userLabel="GambiarraView">
                                             <rect key="frame" x="0.0" y="465" width="600" height="40"/>
@@ -294,7 +294,7 @@
                                                     <rect key="frame" x="16" y="0.0" width="584" height="40"/>
                                                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -315,12 +315,6 @@
                                             <color key="textColor" red="0.34509803919999998" green="0.34901960780000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwX-JV-xtM">
-                                            <rect key="frame" x="377" y="102" width="46" height="30"/>
-                                            <state key="normal" title="Button">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -442,7 +436,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </textAttributes>
                             <items>
-                                <navigationItem title="Requerimento" id="UdG-uK-CDF">
+                                <navigationItem title="Criar Agendamento" id="UdG-uK-CDF">
                                     <barButtonItem key="leftBarButtonItem" title="Cancelar" id="vSU-Ss-vh4">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>

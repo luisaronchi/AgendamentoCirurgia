@@ -17,24 +17,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-Hp-HB3">
-                    <rect key="frame" x="0.0" y="128" width="600" height="472"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <searchBar key="tableHeaderView" contentMode="redraw" id="dgN-Sc-ayS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                        <textInputTraits key="textInputTraits"/>
-                        <connections>
-                            <outlet property="delegate" destination="-1" id="zrq-Ut-Ic9"/>
-                        </connections>
-                    </searchBar>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="Sre-64-bTO"/>
-                        <outlet property="delegate" destination="-1" id="Bf4-gc-V00"/>
-                    </connections>
-                </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-LQ-rmK">
                     <rect key="frame" x="50" y="100" width="500" height="29"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="500" id="gRC-rv-bYi"/>
                     </constraints>
@@ -45,21 +30,28 @@
                     </segments>
                     <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 </segmentedControl>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXc-fu-w86">
-                    <rect key="frame" x="504" y="89" width="46" height="30"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-Hp-HB3">
+                    <rect key="frame" x="0.0" y="148" width="600" height="452"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Pesquisar paciente" translucent="NO" id="dgN-Sc-ayS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <textInputTraits key="textInputTraits" keyboardAppearance="light"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="zrq-Ut-Ic9"/>
+                        </connections>
+                    </searchBar>
                     <connections>
-                        <action selector="NewRequest:" destination="-1" eventType="touchUpInside" id="Aji-aQ-9rA"/>
+                        <outlet property="dataSource" destination="-1" id="Sre-64-bTO"/>
+                        <outlet property="delegate" destination="-1" id="Bf4-gc-V00"/>
                     </connections>
-                </button>
+                </tableView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Kg1-Hp-HB3" secondAttribute="bottom" id="0x2-O6-sEL"/>
                 <constraint firstItem="FYb-LQ-rmK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="71x-vH-n5r"/>
-                <constraint firstItem="Kg1-Hp-HB3" firstAttribute="top" secondItem="FYb-LQ-rmK" secondAttribute="bottom" id="AVg-bf-VF7"/>
+                <constraint firstItem="Kg1-Hp-HB3" firstAttribute="top" secondItem="FYb-LQ-rmK" secondAttribute="bottom" constant="20" id="AVg-bf-VF7"/>
                 <constraint firstItem="Kg1-Hp-HB3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bDb-oo-BGw"/>
                 <constraint firstAttribute="centerX" secondItem="FYb-LQ-rmK" secondAttribute="centerX" id="lOp-qz-32G"/>
                 <constraint firstAttribute="trailing" secondItem="Kg1-Hp-HB3" secondAttribute="trailing" id="tTf-Pa-b1c"/>

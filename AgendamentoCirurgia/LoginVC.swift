@@ -35,12 +35,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     
                     emailUser = self.emailField.text
                     
-                    
-//                    var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
-//                    self.presentViewController(controller, animated: true, completion: nil)
-                    
+                    //segue
                     let vc = FeedVC(nibName: "FeedVC", bundle: nil)
                     self.navigationController?.pushViewController(vc, animated: true)
+                    
+                    //logout provisório
+                    let backItem = UIBarButtonItem(title: " Sair", style: .Plain, target: nil, action: nil)
+                    self.navigationItem.backBarButtonItem = backItem
                     
                 } else {
                     var alertView:UIAlertView = UIAlertView()
@@ -77,6 +78,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let vc = RegisterVC(nibName: "RegisterVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
         
+        //remove o texto do botão back
+        let backItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = backItem
+
+        
     }
     
 
@@ -85,10 +91,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        //logout provisório
-        let backItem = UIBarButtonItem(title: "Logout", style: .Plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = backItem
         
         
     }

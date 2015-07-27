@@ -287,9 +287,36 @@
                                                 <constraint firstAttribute="width" secondItem="vPG-wl-GyF" secondAttribute="height" multiplier="1:1" id="bh4-dN-l8v"/>
                                             </constraints>
                                         </view>
+                                        <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5c-nM-ejW">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="dFz-bz-qkH"/>
+                                            </constraints>
+                                            <color key="barTintColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textAttributes key="titleTextAttributes">
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </textAttributes>
+                                            <items>
+                                                <navigationItem title="Detalhes do Agendamento" id="wsS-mQ-fUq">
+                                                    <barButtonItem key="leftBarButtonItem" title="Voltar" id="IDb-ku-Qjd">
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="backButton:" destination="-1" id="YGS-mS-aA3"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                    <barButtonItem key="rightBarButtonItem" title="Editar" id="Ie7-zX-az7">
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <action selector="editButton:" destination="-1" id="TNG-2p-34H"/>
+                                                        </connections>
+                                                    </barButtonItem>
+                                                </navigationItem>
+                                            </items>
+                                        </navigationBar>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="d5c-nM-ejW" secondAttribute="trailing" id="2p8-Vb-9xy"/>
                                         <constraint firstItem="xik-0t-stH" firstAttribute="top" secondItem="rex-az-dtf" secondAttribute="bottom" constant="1" id="2yR-Ze-wkc"/>
                                         <constraint firstItem="Pwx-RW-UdL" firstAttribute="leading" secondItem="tS3-56-MeS" secondAttribute="leading" constant="16" id="3hI-0W-eYb"/>
                                         <constraint firstItem="Pwx-RW-UdL" firstAttribute="top" secondItem="rex-az-dtf" secondAttribute="bottom" constant="80" id="3xa-fs-2JJ"/>
@@ -316,6 +343,7 @@
                                         <constraint firstItem="04j-rg-OvX" firstAttribute="top" secondItem="9ga-qO-AeJ" secondAttribute="bottom" constant="8" id="WNV-4x-npD"/>
                                         <constraint firstAttribute="trailing" secondItem="1MR-5L-Lzs" secondAttribute="trailing" id="WaX-ou-Nls"/>
                                         <constraint firstItem="0KR-IE-bj1" firstAttribute="top" secondItem="OwI-gz-Jjn" secondAttribute="bottom" constant="8" id="WnP-Hm-GjI"/>
+                                        <constraint firstItem="d5c-nM-ejW" firstAttribute="top" secondItem="tS3-56-MeS" secondAttribute="top" id="YTn-Lg-qAf"/>
                                         <constraint firstAttribute="trailing" secondItem="2ng-aC-ilE" secondAttribute="trailing" id="a6c-9x-eA2"/>
                                         <constraint firstAttribute="trailing" secondItem="xik-0t-stH" secondAttribute="trailing" id="aza-Xr-8oM"/>
                                         <constraint firstItem="AxU-Go-5Jh" firstAttribute="leading" secondItem="tS3-56-MeS" secondAttribute="leading" id="cfl-F0-HnN"/>
@@ -328,6 +356,7 @@
                                         <constraint firstItem="rex-az-dtf" firstAttribute="top" secondItem="0KR-IE-bj1" secondAttribute="bottom" constant="1" id="lab-do-u1E"/>
                                         <constraint firstAttribute="trailing" secondItem="AxU-Go-5Jh" secondAttribute="trailing" id="mVY-Ox-t2h"/>
                                         <constraint firstItem="CIV-y0-BFT" firstAttribute="top" secondItem="Pwx-RW-UdL" secondAttribute="bottom" constant="8" id="mcs-sC-ZJc"/>
+                                        <constraint firstItem="d5c-nM-ejW" firstAttribute="leading" secondItem="tS3-56-MeS" secondAttribute="leading" id="o3L-Sn-6yv"/>
                                         <constraint firstItem="9ga-qO-AeJ" firstAttribute="leading" secondItem="tS3-56-MeS" secondAttribute="leading" constant="16" id="poa-6g-JCG"/>
                                         <constraint firstAttribute="bottom" secondItem="vPG-wl-GyF" secondAttribute="bottom" constant="35" id="rTk-oR-qW3"/>
                                         <constraint firstItem="rex-az-dtf" firstAttribute="leading" secondItem="tS3-56-MeS" secondAttribute="leading" id="sA3-xZ-Dru"/>
@@ -360,7 +389,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="pVN-qZ-FlT" firstAttribute="top" secondItem="OID-pv-fQb" secondAttribute="top" id="5Ga-r5-lE4"/>
                 <constraint firstAttribute="bottom" secondItem="pVN-qZ-FlT" secondAttribute="bottom" id="Kzd-zD-sTc"/>

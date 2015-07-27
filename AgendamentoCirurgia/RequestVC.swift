@@ -66,7 +66,7 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
             var alertView:UIAlertView = UIAlertView()
             
             if (error){
-                alertView.title = "Nao foi possivel completar o registro"
+                alertView.title = "Não foi possível completar o agendamento"
                 alertView.message = desc
                 alertView.delegate = self
                 alertView.addButtonWithTitle("Ok")
@@ -74,8 +74,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
                 alertView.show()
                 
             } else {
-                alertView.title = "Requerimento Realizado"
-                alertView.message = "Registro Completo"
+                alertView.title = "Agendamento Encaminhado"
+                alertView.message = "Aguardando Resposta"
                 alertView.delegate = self
                 alertView.addButtonWithTitle("Ok")
                 

@@ -39,7 +39,7 @@
                         <constraint firstAttribute="height" constant="40" id="cHA-lA-btN"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l57-fc-QDp">
                     <rect key="frame" x="0.0" y="574" width="622" height="40"/>
@@ -48,7 +48,7 @@
                         <constraint firstAttribute="height" constant="40" id="Y5Q-Ph-kWI"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                 </textField>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MG0-Za-6hG">
                     <rect key="frame" x="-16" y="614" width="632" height="41"/>
@@ -69,7 +69,7 @@
                         <constraint firstAttribute="height" constant="29" id="6R4-WE-QHQ"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="15"/>
-                    <state key="normal" title="Cadastre-se">
+                    <state key="normal" title="Cadastrar-se">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                     </state>

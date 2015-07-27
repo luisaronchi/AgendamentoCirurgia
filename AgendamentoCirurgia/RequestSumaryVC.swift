@@ -28,11 +28,21 @@ class RequestSumaryVC: UIViewController {
     
     @IBOutlet weak var observationLabel: UILabel!
     
+    @IBAction func backButton(sender: AnyObject) {
+        
+       //segue pro navigation (Feed)
+        
+    }
+    
+    @IBAction func editButton(sender: AnyObject) {
+        
+        //mudar para "edit mode" (setEditing)
+        // func editButtonItem() -> UIBarButtomItem
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Detalhes do pedido"
-
     }
 
     override func didReceiveMemoryWarning() {

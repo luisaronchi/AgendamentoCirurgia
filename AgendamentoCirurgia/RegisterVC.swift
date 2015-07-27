@@ -31,7 +31,7 @@ class RegisterVC: UIViewController {
         
         var alertView:UIAlertView = UIAlertView()
         alertView.title = "Erro"
-        alertView.message = "Precisamos de todos os campos preenchidos"
+        alertView.message = "Preencha todos os campos"
         alertView.delegate = self
         alertView.addButtonWithTitle("Ok")
         alertView.show()
@@ -43,7 +43,7 @@ class RegisterVC: UIViewController {
             var alertView:UIAlertView = UIAlertView()
             
             if (error){
-                alertView.title = "Nao foi possivel completar o registro"
+                alertView.title = "Não foi possível completar o cadastro"
                 alertView.message = desc
                 alertView.delegate = self
                 alertView.addButtonWithTitle("Ok")
@@ -51,8 +51,8 @@ class RegisterVC: UIViewController {
                 alertView.show()
                 
             } else {
-                alertView.title = "Cadastro Realizado"
-                alertView.message = "Registro Completo"
+                alertView.title = "Cadastro Completo"
+                alertView.message = "Faça o login"
                 alertView.delegate = self
                 alertView.addButtonWithTitle("Ok")
                 
@@ -72,6 +72,8 @@ class RegisterVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Cadastro"
+
     }
     
     override func didReceiveMemoryWarning() {
