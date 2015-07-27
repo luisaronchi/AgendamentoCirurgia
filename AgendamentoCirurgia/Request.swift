@@ -15,14 +15,15 @@ class Request {
     var doctorName: String
     var doctorTelephone: Int
     var surgeryType: String
-    var doctorApplication: String
-    var patientBirth: Int
-    var surgeryDate: Int
-    var gender: Bool
+//    var doctorApplication: String
+    var patientBirth: String
+    var surgeryDate: String
+    var gender: String
+    var email: String
     
     
     
-    init (patientFullName: String, insurance: String, doctorName: String, doctorTelephone: Int, surgeryType: String, doctorApplication: String, patientBirth: Int, surgeryDate: Int, gender: Bool) {
+    init (patientFullName: String, insurance: String, doctorName: String, doctorTelephone: Int, surgeryType: String, patientBirth: String, surgeryDate: String, gender: String, email: String) {
         
         self.patientFullName = patientFullName
         self.insurance = insurance
@@ -30,9 +31,10 @@ class Request {
         self.doctorTelephone = doctorTelephone
         self.surgeryDate = surgeryDate
         self.surgeryType = surgeryType
-        self.doctorApplication = doctorApplication
+//        self.doctorApplication = doctorApplication
         self.patientBirth = patientBirth
         self.surgeryType = surgeryType
         self.gender = gender
+        self.email = email
     }
 }

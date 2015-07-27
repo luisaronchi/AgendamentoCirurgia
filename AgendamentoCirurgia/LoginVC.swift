@@ -33,14 +33,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     
                     DoctorDAO.setCurrentUser(self.emailField.text, password: self.passwordField.text)
                     
+                    emailUser = self.emailField.text
+                    
+                    
+//                    var controller: FeedVC = FeedVC(nibName:"FeedVC", bundle:NSBundle.mainBundle())
+//                    self.presentViewController(controller, animated: true, completion: nil)
+                    
                     let vc = FeedVC(nibName: "FeedVC", bundle: nil)
                     self.navigationController?.pushViewController(vc, animated: true)
-                    
-                    //logout provisório
-                    let backItem = UIBarButtonItem(title: " Sair", style: .Plain, target: nil, action: nil)
-                    self.navigationItem.backBarButtonItem = backItem
-                    
-                   
                     
                 } else {
                     var alertView:UIAlertView = UIAlertView()
@@ -76,12 +76,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     {
         // REGISTRO
         
+//        var registerVC = RegisterVC(nibName: "RegisterVC", bundle: nil)
+//        self.presentViewController(registerVC, animated: true, completion: nil)
+        
         let vc = RegisterVC(nibName: "RegisterVC", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
-        
-        //remove texto do botão back
-        let backItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
-        self.navigationItem.backBarButtonItem = backItem
         
     }
     
@@ -91,6 +90,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        //logout provisório
+        let backItem = UIBarButtonItem(title: "Logout", style: .Plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem = backItem
+        
+        
     }
     
     

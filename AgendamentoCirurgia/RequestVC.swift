@@ -9,6 +9,7 @@
 import UIKit
 import MobileCoreServices
 
+var emailUser: String!
 
 class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
@@ -34,18 +35,16 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBOutlet weak var observationField: UITextField!
     
-    @IBOutlet weak var nameSecretaryField: UITextField!
-    
     var id = 1;
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-//        //navigationbar setup
-//    
-//        self.navigationItem.title = "Requerimento de cirurgia"
-//        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
+        //navigationbar setup
+    
+        self.navigationItem.title = "Requerimento de cirurgia"
+        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
         
         //
         dateTextField.delegate = self
@@ -55,32 +54,40 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         view.addGestureRecognizer(tap)
     }
     
-    @IBAction func buttonclicked(sender: UIBarButtonItem)
-    {
-        if (nameField.text.isEmpty != false || dateTextField.text.isEmpty != false || insuranceField.text.isEmpty != false || genderField.text.isEmpty != false || nameDoctorField.text.isEmpty != false || phoneField.text.isEmpty != false || nameSecretaryField.text.isEmpty != false || surgeryTypeField.text.isEmpty != false || SurgeryDate.text.isEmpty != false || materialField.text.isEmpty != false || observationField.text.isEmpty != false)
-        {
-        var alertView:UIAlertView = UIAlertView()
+    @IBAction func buttonclicked(sender: UIBarButtonItem) {
+        
+        RequestDAO.addRequest(self.nameField.text, insurance: self.insuranceField.text, doctorName: self.nameDoctorField.text, doctorTelephone: self.phoneField.text.toInt()!, surgeryType: self.surgeryTypeField.text, patientBirth: self.dateTextField.text, surgeryDate: self.SurgeryDate.text, gender: self.genderField.text, email: emailUser, callback: { (error : Bool, desc : String) in
+            
+            println("FOIII")
+            var alertView:UIAlertView = UIAlertView()
+            
+            if (error){
+                alertView.title = "Nao foi possivel completar o registro"
+                alertView.message = desc
+                alertView.delegate = self
+                alertView.addButtonWithTitle("Ok")
+                
+                alertView.show()
+                
+            } else {
+                alertView.title = "Requerimento Realizado"
+                alertView.message = "Registro Completo"
+                alertView.delegate = self
+                alertView.addButtonWithTitle("Ok")
+                
+                alertView.show()
+                
+                
+            self.navigationController?.popViewControllerAnimated(true)
+                
+            }
+            
+            })
 
-        alertView.title = "Nao foi possivel completar o registro"
-        alertView.message = "É necessário preencher todos os campos"
-        alertView.delegate = self
-        alertView.addButtonWithTitle("Ok")
-        
-        alertView.show()
-        }
-        
-        else
-        {
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
+       
+        println("xd")
+
     }
-    
-    @IBAction func cancelButton(sender: AnyObject)
-    {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    
 
     func didTapView () {
         view.endEditing(true)

@@ -24,8 +24,6 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var speciality: UITextField!
     
-    @IBOutlet weak var secretaryName: UITextField! //falta coisar no back
-    
     @IBAction func signUpAction(sender: UIButton) {if (nameField.text.isEmpty  || crmField.text.isEmpty || emailField.text.isEmpty || passwordField.text.isEmpty || phoneField.text.isEmpty) {
         
         var alertView:UIAlertView = UIAlertView()
@@ -58,6 +56,9 @@ class RegisterVC: UIViewController {
                 
                 alertView.show()
                 
+//                var loginViewController = LoginVC(nibName: "LoginVC", bundle: nil)
+//                self.presentViewController(loginViewController, animated: true, completion: nil)
+
                 let vc = LoginVC(nibName: "LoginVC", bundle: nil)
                 self.navigationController?.pushViewController(vc, animated: true)
                 
@@ -71,9 +72,6 @@ class RegisterVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationItem.title = "Cadastro"
-
         
     }
     

@@ -8,11 +8,9 @@
 
 import Foundation
 import Parse
-import Foundation
-import Parse
 
 
-class DoctorDAO: NSObject {
+class DoctorDAO {
     
     class func logOut() {
         

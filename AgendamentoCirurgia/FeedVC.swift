@@ -12,15 +12,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBAction func NewRequest(sender: UIButton) {
         
-        var controller: RequestVC = RequestVC(nibName:"RequestVC", bundle:nil)
-        self.presentViewController(controller, animated: true, completion: nil)
+//        var requestVC = RequestVC(nibName: "RequestVC", bundle: nil)
+//        self.presentViewController(requestVC, animated: true, completion:nil)
         
-        //let vc = RequestVC(nibName: "RequestVC", bundle: nil)
-        //self.navigationController?.pushViewController(vc, animated: true)
-        
-        //muda o texto do botão do navigation
-        let backItem = UIBarButtonItem(title: " Cancelar", style: .Plain, target: nil, action: nil)
-        self.navigationItem.backBarButtonItem = backItem
+        let vc = RequestVC(nibName: "RequestVC", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -33,10 +29,12 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     {
         super.viewDidLoad()
         
-        //navigation
-        self.navigationItem.title = "Agendamentos"
         
-        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "+", style: .Plain, target: self, action: "NewRequest:"), animated: true)
+        //logout provisório
+        //let backItem = UIBarButtonItem(title: "Logout", style: .Plain, target: nil, action: nil)
+        //navigationItem.backBarButtonItem = backItem
+        
+        //self.navigationItem.hidesBackButton = true;
 
     }
     

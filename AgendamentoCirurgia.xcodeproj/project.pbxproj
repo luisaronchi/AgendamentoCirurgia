@@ -148,10 +148,11 @@
 		1631556B1B5440C000A4DCE9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A50267391B56C43C00DA2B53 /* LoginVC.xib */,
+				ABA1AE3A1B5417AA00467491 /* Main.storyboard */,
 				A5D579371B56943D006098EA /* RegisterVC.xib */,
-				3FD1A2AA1B569843005BC804 /* FeedVC.xib */,
 				A5D5793F1B5695E4006098EA /* RequestVC.xib */,
+				3FD1A2AA1B569843005BC804 /* FeedVC.xib */,
+				A50267391B56C43C00DA2B53 /* LoginVC.xib */,
 				3F3EFC931B56EC7B00AC55BC /* RequestSumaryVC.xib */,
 				ABA1AE3D1B5417AA00467491 /* Images.xcassets */,
 			);
@@ -161,10 +162,10 @@
 		1631556C1B5440C600A4DCE9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A50267381B56C43C00DA2B53 /* LoginVC.swift */,
 				A5D579361B56943D006098EA /* RegisterVC.swift */,
-				3FD1A2A91B569843005BC804 /* FeedVC.swift */,
 				A5D5793E1B5695E4006098EA /* RequestVC.swift */,
+				3FD1A2A91B569843005BC804 /* FeedVC.swift */,
+				A50267381B56C43C00DA2B53 /* LoginVC.swift */,
 				3F3EFC921B56EC7B00AC55BC /* RequestSumaryVC.swift */,
 			);
 			name = Controller;
@@ -226,7 +227,6 @@
 				A548112E1B5D6C970069F105 /* anexo.png */,
 				ABA1AE361B5417AA00467491 /* AppDelegate.swift */,
 				ABA1AE3F1B5417AA00467491 /* LaunchScreen.xib */,
-				ABA1AE3A1B5417AA00467491 /* Main.storyboard */,
 				A50267371B56BAE900DA2B53 /* MyriadPro-Regular.otf */,
 				968259661B56F0BB008A5872 /* LogoRedeDor.png */,
 				ABA1AE351B5417AA00467491 /* Info.plist */,

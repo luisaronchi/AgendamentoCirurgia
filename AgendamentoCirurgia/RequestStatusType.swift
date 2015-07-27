@@ -13,6 +13,8 @@ enum RequestStatusType {
     case InsuranceOK(Int)
     case Denied(Int)
     case Finalized(Int)
+    
+    
 }
     
 
