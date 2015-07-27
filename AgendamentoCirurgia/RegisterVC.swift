@@ -8,7 +8,24 @@
 
 import UIKit
 
-class RegisterVC: UIViewController {
+class RegisterVC: UIViewController, UITextFieldDelegate{
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+//    func textFieldDidBeginEditing(textField: UITextField) {
+//        Bool isLastTextField = nameSecretaryField.????
+//    
+//        if(isLastTextField){
+//        textField.returnKeyType = UIReturnKeyDone
+//        }
+//        else {
+//        textField.returnKeyType = UIReturnKeyNext
+//        }
+//    }
 
     @IBOutlet weak var nameField: UITextField!
     

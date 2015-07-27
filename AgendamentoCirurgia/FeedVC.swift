@@ -21,6 +21,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
     
     
     
+ 
+    
     @IBOutlet weak var tableFeed: UITableView!
     
     @IBOutlet weak var segment: UISegmentedControl!
@@ -38,6 +40,11 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UISe
         
         //self.navigationItem.hidesBackButton = true;
 
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let sumaryVC = RequestSumaryVC(nibName: "RequestSumaryVC", bundle: nil)
+        self.presentViewController(sumaryVC, animated: true, completion: nil)
     }
     
     

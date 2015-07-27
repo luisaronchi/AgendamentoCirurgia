@@ -60,6 +60,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="xYb-ud-edd"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu3-7b-qlN" userLabel="GambiarraViewCRM">
                     <rect key="frame" x="0.0" y="201" width="600" height="40"/>
@@ -76,6 +79,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="d7f-yX-EJA"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9U-Q8-qGJ" userLabel="GambiarraViewEmail">
                     <rect key="frame" x="0.0" y="242" width="600" height="40"/>
@@ -92,6 +98,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fFD-CR-InV"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2i-hi-lRX" userLabel="GambiarraViewSenha">
                     <rect key="frame" x="0.0" y="283" width="600" height="40"/>
@@ -108,6 +117,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="tg5-09-ogU"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1U-uE-TgC" userLabel="GambiarraViewTelefone">
                     <rect key="frame" x="0.0" y="324" width="600" height="40"/>
@@ -124,6 +136,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fXg-9L-9O9"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qI7-bL-dfC" userLabel="GambiarraViewTelefone">
                     <rect key="frame" x="0.0" y="365" width="600" height="40"/>
@@ -140,6 +155,9 @@
                     </constraints>
                     <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="goq-bI-ecu"/>
+                    </connections>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qZ-s7-aNo" userLabel="GambiarraViewTelefone">
                     <rect key="frame" x="0.0" y="406" width="600" height="40"/>
@@ -152,6 +170,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="9eq-fn-lh8"/>
+                            </connections>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -173,6 +194,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="iux-3y-WhE"/>
+                            </connections>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" red="0.67450980390000004" green="0.84705882349999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>

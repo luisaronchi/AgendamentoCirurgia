@@ -41,6 +41,11 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     var id = 1;
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {   //delegate method
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -51,6 +56,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         //self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
         
         //
+
+        
         dateTextField.delegate = self
         SurgeryDate.delegate = self
         

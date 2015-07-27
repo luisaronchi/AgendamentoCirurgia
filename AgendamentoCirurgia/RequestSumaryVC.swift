@@ -22,15 +22,20 @@ class RequestSumaryVC: UIViewController {
     
     @IBOutlet weak var typeSurgeryLabel: UILabel!
     
+    @IBOutlet weak var imageOfPedido: UIView!
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var materialLabel: UILabel!
     
     @IBOutlet weak var observationLabel: UILabel!
     
+    @IBOutlet weak var nameSecretaryLabel: UILabel!
+    
+    @IBOutlet weak var genderLabel: UILabel!
+    
     @IBAction func backButton(sender: AnyObject) {
         
-       //segue pro navigation (Feed)
+       self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     

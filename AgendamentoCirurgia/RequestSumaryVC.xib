@@ -28,16 +28,17 @@
             <connections>
                 <outlet property="birthLabel" destination="R91-KE-xG8" id="hRN-89-0b5"/>
                 <outlet property="dateLabel" destination="Xoz-uC-7aY" id="Tum-uv-X5Y"/>
-                <outlet property="genderLabel" destination="h3P-Gq-9kI" id="GzJ-X5-QH6"/>
+                <outlet property="genderLabel" destination="h3P-Gq-9kI" id="WDg-0B-Sl1"/>
+                <outlet property="imageOfPedido" destination="vPG-wl-GyF" id="bO3-RY-Elc"/>
                 <outlet property="insuranceLabel" destination="MYc-pN-N9G" id="GXw-8H-PL2"/>
                 <outlet property="materialLabel" destination="3OV-Zz-2Hx" id="EGz-Kj-epo"/>
                 <outlet property="nameDoctorLabel" destination="Ky5-mW-5Vj" id="qiY-D2-lag"/>
                 <outlet property="nameLabel" destination="YbT-ws-cdL" id="3ds-Hu-Ogl"/>
-                <outlet property="nameSecretaryLabel" destination="dQt-wc-0Au" id="dPq-vM-tHQ"/>
+                <outlet property="nameSecretaryLabel" destination="dQt-wc-0Au" id="5py-js-9jQ"/>
                 <outlet property="observationLabel" destination="gCD-H1-6d9" id="lee-JD-0dn"/>
-                <outlet property="pedidoImage" destination="vPG-wl-GyF" id="pJa-7y-1ky"/>
                 <outlet property="phoneLabel" destination="uwd-Mk-u1b" id="V3m-pZ-eCk"/>
                 <outlet property="typeSurgeryLabel" destination="qJT-z6-5tI" id="eLJ-Ee-3jG"/>
+                <outlet property="view" destination="OID-pv-fQb" id="hzZ-S8-gV0"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -399,16 +400,5 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="298" y="-160"/>
         </view>
-        <viewController id="cb8-i3-OH7">
-            <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="6LT-2H-SyK"/>
-                <viewControllerLayoutGuide type="bottom" id="YkR-9v-Ga8"/>
-            </layoutGuides>
-            <view key="view" contentMode="scaleToFill" id="ksy-Yu-mIx">
-                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            </view>
-        </viewController>
     </objects>
 </document>
