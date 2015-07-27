@@ -30,6 +30,8 @@ class RequestSumaryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Detalhes do pedido"
 
     }
 

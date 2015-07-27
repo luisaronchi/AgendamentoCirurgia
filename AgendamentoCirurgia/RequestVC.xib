@@ -440,13 +440,13 @@
                                     <barButtonItem key="leftBarButtonItem" title="Cancelar" id="vSU-Ss-vh4">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="cancelButton:" destination="-1" id="9Pj-1z-6PL"/>
+                                            <action selector="cancelButton:" destination="-1" id="PmP-j4-jIm"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem key="rightBarButtonItem" title="OK" id="LdU-MR-Fv2">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="buttonclicked:" destination="-1" id="O58-Rd-NEE"/>
+                                            <action selector="buttonclicked:" destination="-1" id="GaN-9S-r3q"/>
                                         </connections>
                                     </barButtonItem>
                                 </navigationItem>
