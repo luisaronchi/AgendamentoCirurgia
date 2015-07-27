@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Step 1: create view controller instance
         // Step 2: create a navigation controller with view controller instance as root
         // Step 3: navigation controller instance is set as rootviewcontroller of the window
+        
         var viewController = LoginVC(nibName: "LoginVC", bundle: nil)
         self.navigationController = UINavigationController(rootViewController: viewController)
         self.window!.rootViewController = self.navigationController

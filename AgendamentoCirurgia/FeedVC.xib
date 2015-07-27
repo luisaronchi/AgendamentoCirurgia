@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedVC" customModule="AgendamentoCirurgia" customModuleProvider="target">
             <connections>
+                <outlet property="searchDisplayController" destination="If7-mT-k7l" id="NtZ-Ld-Z1Z"/>
                 <outlet property="segment" destination="FYb-LQ-rmK" id="JNz-Xo-PIj"/>
                 <outlet property="tableFeed" destination="Kg1-Hp-HB3" id="clH-hT-lyo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -17,15 +18,23 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Kg1-Hp-HB3">
-                    <rect key="frame" x="0.0" y="208" width="584" height="392"/>
+                    <rect key="frame" x="0.0" y="128" width="600" height="472"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <searchBar key="tableHeaderView" contentMode="redraw" id="dgN-Sc-ayS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="zrq-Ut-Ic9"/>
+                        </connections>
+                    </searchBar>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Sre-64-bTO"/>
                         <outlet property="delegate" destination="-1" id="Bf4-gc-V00"/>
                     </connections>
                 </tableView>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FYb-LQ-rmK">
-                    <rect key="frame" x="50" y="140" width="500" height="29"/>
+                    <rect key="frame" x="50" y="100" width="500" height="29"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="500" id="gRC-rv-bYi"/>
                     </constraints>
@@ -40,12 +49,21 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Kg1-Hp-HB3" secondAttribute="bottom" id="0x2-O6-sEL"/>
-                <constraint firstItem="FYb-LQ-rmK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="140" id="71x-vH-n5r"/>
-                <constraint firstItem="Kg1-Hp-HB3" firstAttribute="top" secondItem="FYb-LQ-rmK" secondAttribute="bottom" constant="40" id="UJP-Bo-7ad"/>
+                <constraint firstItem="FYb-LQ-rmK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="71x-vH-n5r"/>
+                <constraint firstItem="Kg1-Hp-HB3" firstAttribute="top" secondItem="FYb-LQ-rmK" secondAttribute="bottom" id="AVg-bf-VF7"/>
                 <constraint firstItem="Kg1-Hp-HB3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bDb-oo-BGw"/>
                 <constraint firstAttribute="centerX" secondItem="FYb-LQ-rmK" secondAttribute="centerX" id="lOp-qz-32G"/>
-                <constraint firstAttribute="trailing" secondItem="Kg1-Hp-HB3" secondAttribute="trailing" constant="16" id="tTf-Pa-b1c"/>
+                <constraint firstAttribute="trailing" secondItem="Kg1-Hp-HB3" secondAttribute="trailing" id="tTf-Pa-b1c"/>
             </constraints>
         </view>
+        <searchDisplayController id="If7-mT-k7l">
+            <connections>
+                <outlet property="delegate" destination="-1" id="sGc-bG-6uL"/>
+                <outlet property="searchBar" destination="dgN-Sc-ayS" id="NMs-jF-hv9"/>
+                <outlet property="searchContentsController" destination="-1" id="1eK-8v-Yff"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="YaZ-Za-0gb"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="fUh-SA-lWF"/>
+            </connections>
+        </searchDisplayController>
     </objects>
 </document>

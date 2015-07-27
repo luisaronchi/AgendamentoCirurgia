@@ -33,7 +33,7 @@
                 <outlet property="materialField" destination="c6p-IP-ozS" id="GL2-99-dN1"/>
                 <outlet property="nameDoctorField" destination="MYO-72-9js" id="HI5-EW-nl0"/>
                 <outlet property="nameField" destination="rJj-93-FX9" id="WTd-8d-W61"/>
-                <outlet property="nameSecretaryField" destination="VtC-hF-IKD" id="8Lm-1w-aGx"/>
+                <outlet property="nameSecretaryField" destination="VtC-hF-IKD" id="wEy-Zh-0G4"/>
                 <outlet property="observationField" destination="SOy-9K-cAY" id="zeW-gC-Fn8"/>
                 <outlet property="phoneField" destination="AIR-4x-xoY" id="8P8-mz-B1k"/>
                 <outlet property="surgeryTypeField" destination="iaA-4g-p5H" id="yt0-N6-Rgz"/>

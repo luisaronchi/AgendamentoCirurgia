@@ -35,6 +35,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBOutlet weak var observationField: UITextField!
     
+    @IBOutlet weak var nameSecretaryField: UITextField!
+    
     var id = 1;
     
     override func viewDidLoad()
