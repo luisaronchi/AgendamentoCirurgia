@@ -25,6 +25,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
     
     @IBOutlet weak var phoneField: UITextField!
     
+    @IBOutlet weak var nameSecretaryField: UITextField!
+    
     @IBOutlet weak var surgeryTypeField: UITextField!
     
     @IBOutlet weak var SurgeryDate: UITextField!
@@ -43,8 +45,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         
         //navigationbar setup
     
-        self.navigationItem.title = "Requerimento de cirurgia"
-        self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
+        //self.navigationItem.title = "Requerimento de cirurgia"
+        //self.navigationItem.setRightBarButtonItem(UIBarButtonItem(title: "OK", style: .Plain, target: self, action: "buttonclicked:"), animated: true)
         
         //
         dateTextField.delegate = self
@@ -77,8 +79,8 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
                 
                 alertView.show()
                 
-                
-            self.navigationController?.popViewControllerAnimated(true)
+             self.dismissViewControllerAnimated(true, completion: nil)
+            //self.navigationController?.popViewControllerAnimated(true)
                 
             }
             
@@ -88,6 +90,12 @@ class RequestVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerD
         println("xd")
 
     }
+    
+    @IBAction func cancelButton(sender: AnyObject) {
+       
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
 
     func didTapView () {
         view.endEditing(true)
